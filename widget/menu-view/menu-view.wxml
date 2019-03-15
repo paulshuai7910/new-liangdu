@@ -1,0 +1,43 @@
+<view class="{{_showMenu==1?'blur':''}}">
+  <slot />
+</view>
+<view class="{{_showMenu==1?'menu-warp':''}}" bindtap='hideMenu'>
+  <view class='menu-box'>
+    <view class='menu-info'>
+      <view class="menu-list">
+        <view class="{{_showMenu==1?'menu-list-show':_showMenu==2?'menu-list-hide':'menu-list-content'}}">
+          <block wx:for="{{menuList}}">
+            <view class="menu-item menu-navigator" wx:if="{{item.key=='mobile'}}" data-phone='{{item.phone}}' bindtap='makePhoneCall'>
+              <label>{{item.title}}</label>
+              <i class="iconfont icon-{{item.key}}"></i>
+            </view>
+            <auth-view openType="contact" wx:elif="{{item.key=='message'}}">
+              <view class="menu-item menu-navigator">
+                <label>{{item.title}}</label>
+                <i class="iconfont icon-{{item.key}}"></i>
+              </view>
+            </auth-view>
+            <auth-view openType="share" wx:elif="{{item.key=='share'}}">
+              <view class="menu-item menu-navigator">
+                <label>{{item.title}}</label>
+                <i class="iconfont icon-{{item.key}}"></i>
+              </view>
+            </auth-view>
+            <view wx:else class="menu-item menu-navigator"  data-url='{{item.url}}' bindtap='menuNavigate'>
+              <label>{{item.title}}</label>
+              <i class="iconfont icon-{{item.key}}"></i>
+            </view>
+          </block>
+        </view>
+      </view>
+      <view class="menu-item " catchtap='showMenu'>
+        <view class="menu-more {{_showMenu==1?'show-menu':_showMenu==2?'hide-menu':''}}">
+          <i class="iconfont icon-close"></i>
+        </view>
+      </view>
+    </view>
+    <view class="menu-item menu-top" catchtap='scrollTop'>
+      <i class="iconfont icon-top"></i>
+    </view>
+  </view>
+</view>

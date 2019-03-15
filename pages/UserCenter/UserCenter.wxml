@@ -1,0 +1,21 @@
+<view class='banner'>
+  <view class='banner_info_bg'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class='banner_info'>
+    <view class='photo'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='nickName'>
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+</view>
+<view class='list-box'>
+  <navigator hover-class='none'>
+    <list-view title="我要入驻" desc="轻松合作，商机无限" mode="none"></list-view>
+  </navigator>
+  <navigator url='../../shopadmin/login/login' hover-class='none'>
+    <list-view title="商家入口" mode="none" icon='icon-shop_fill' ></list-view>
+  </navigator>
+</view>

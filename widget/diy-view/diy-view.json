@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "message-view": "../../widget/message-view/message-view",
+    "html-view": "../../widget/html-view/html-view",
+    "flex-view": "../../widget/flex-view/flex-view",
+    "elip-view": "../../widget/elip-view/elip-view",
+    "price-view":"../../widget/price-view/price-view",
+    "serach-view": "../../widget/serach-view/serach-view",
+    "countdown-view": "../../widget/countdown-view/countdown-view"
+  }
+}

@@ -1,0 +1,44 @@
+
+.banner {
+  position: relative;
+  height: 300rpx;
+  overflow: hidden;
+}
+
+.banner_info_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx;
+  filter:blur(15rpx);
+  transform: scale(1.2);
+}
+
+.banner_info {
+  height: 300rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.banner_info .photo {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.banner_info .nickName {
+  font-size: 32rpx;
+}
+.list-box{
+  background: #fff;
+}
+.list-box navigator{
+  border-bottom: 1rpx solid #d9d9d9;
+}

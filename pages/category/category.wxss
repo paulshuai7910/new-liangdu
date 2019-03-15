@@ -1,0 +1,144 @@
+@import '../../style/icon-font.wxss';
+.category_title{
+  font-size: 24rpx;
+  background-color: #fff;
+  padding: 10rpx 20rpx;
+  border-bottom:1rpx solid #d5d5d5; 
+}
+.category_item{
+  width: 20%;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+}
+
+.category_item image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.tab__item {
+  flex: 1;
+  font-size: 24rpx;
+  height: 80rpx;
+  box-sizing: border-box;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+}
+
+.vendor_item {
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.vendor_info image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+}
+
+.vendor_info .title {
+  font-size: 30rpx;
+  color: #008aff;
+}
+
+.vendor_info label {
+  display: inline-block;
+  font-size: 24rpx;
+  margin: 10rpx 10rpx 0 0;
+  padding: 3rpx 10rpx;
+  border-radius: 4rpx;
+  line-height: 40rpx;
+}
+
+.vendor_info .Istop {
+  background: #f7781f;
+  color: #fff;
+}
+
+.vendor_dec {
+  width: 350rpx;
+}
+
+.vendor_info .Isactivity {
+  background: #1adba3;
+  color: #fff;
+}
+
+.call_phone {
+  font-size: 26rpx;
+  color: #fff;
+  background-color: #ec404c;
+  padding: 10rpx 20rpx;
+  border-radius: 8rpx;
+}
+
+.call_phone .iconfont {
+  font-size: 36rpx;
+  margin-right: 6rpx;
+}
+
+.vendor_text {
+  font-size: 26rpx;
+  line-height: 40rpx;
+  margin: 10rpx 0 20rpx 0;
+  color: #6f6f6f;
+}
+
+.vendor_imageitem {
+  width: 160rpx;
+  height: 160rpx;
+  background-color: red;
+}
+
+.location {
+  font-size: 24rpx;
+  color: #008aff;
+  margin-top: 20rpx;
+}
+
+.location .icon-location {
+  color: red;
+  margin-right: 5rpx;
+}
+
+.operation_box {
+  color: #888;
+}
+
+.operation_box .icon-top-s {
+  color: #f8f8f8;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  position: relative;
+  bottom: -10rpx;
+}
+
+.operation_detail .iconfont {
+  color: #888;
+}
+
+.operation_detail {
+  background-color: #f8f8f8;
+  padding: 10rpx 20rpx;
+}
+
+.operation_detail label {
+  color: #008aff;
+  display: initial;
+}
+
+.op_item {
+  margin-right: 20rpx;
+}
+
+.operation_detail .icon-right {
+  font-size: 24rpx;
+  line-height: 24rpx;
+}
+
+.operation_url label {
+  color: #008aff;
+}

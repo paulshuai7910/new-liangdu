@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#1E60b4",
+  "usingComponents": {
+    "input-view": "../../widget/input-view/input-view",
+    "button-view": "../../widget/button-view/button-view"
+  }
+}

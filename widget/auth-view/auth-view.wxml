@@ -1,0 +1,3 @@
+<button class='button' hover-class="none" open-type='{{openType}}' bindgetuserinfo='{{openType}}' bindgetphonenumber='{{openType}}'>
+  <slot></slot>
+</button>

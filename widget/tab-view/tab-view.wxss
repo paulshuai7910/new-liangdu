@@ -1,0 +1,43 @@
+.tab__ceiling{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.tab__line--bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4rpx;
+  width: 50rpx;
+}
+
+.tab__line--left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rpx;
+  height: 50rpx;
+}
+
+.tab__line--bottom-animate {
+  transition: left 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.tab__line--left-animate {
+  transition: top 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.select_index{
+  position: relative;
+}
+.select_index::after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 4rpx;
+  background-color: #db384c;
+  left: 0;
+  width: 100%;
+}

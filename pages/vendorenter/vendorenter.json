@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "input-view": "../../widget/input-view/input-view",
+    "flex-view": "../../widget/flex-view/flex-view",
+    "button-view": "../../widget/button-view/button-view"
+  }
+}

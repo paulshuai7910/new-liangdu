@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "flex-view": "../../widget/flex-view/flex-view"
+  }
+}

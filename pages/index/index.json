@@ -1,0 +1,14 @@
+{
+  "window": {
+    "onReachBottomDistance": 50
+  },
+  "usingComponents": {
+    "html-view": "../../widget/html-view/html-view",
+    "flex-view": "../../widget/flex-view/flex-view",
+    "auth-view": "../../widget/auth-view/auth-view",
+    "tab-view": "../../widget/tab-view/tab-view",
+    "diy-view": "../../widget/diy-view/diy-view",
+    "menu-view": "../../widget/menu-view/menu-view",
+    "elip-view": "../../widget/elip-view/elip-view"
+  }
+}

@@ -1,0 +1,116 @@
+<view class='category_title'>
+  <flex-view cross='center' main='between'>
+    <view class='iconfont icon-rank'></view>
+    <flex-view>
+      <view style='margin-right:10rpx;'>总浏览量：
+        <label style='color: #ec404c;'>2324</label>
+      </view>
+      <view>总量：
+        <label style='color: #008aff;'>2324</label>
+      </view>
+    </flex-view>
+  </flex-view>
+</view>
+<view style='background-color:#fff;'>
+  <flex-view wrap='wrap'>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+  </flex-view>
+</view>
+
+<tab-view tabs="{{tabs}}" animate="true" viewDir="left" pattern='2' tabStyle="border-bottom:1rpx solid #f0f0f0;margin-top: 10rpx;position: sticky;top: 0;z-index: 99;">
+  <view wx:for="{{tabs}}" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
+    <view>{{item.title}}</view>
+  </view>
+  <view wx:for="{{tabs}}" slot="tab__conter-{{index}}" style='position: relative;'>
+
+    <view class='vendor_list'>
+        <view class='vendor_item'>
+          <flex-view class='vendor_info' cross='center' main='between'>
+            <flex-view cross='center'>
+              <image src='http://bpic.588ku.com/original_pic/18/11/25/6c43f9645e35eef5512192068a087258.jpg!/fw/248/unsharp/true/compress/true'></image>
+              <flex-view dir='top' class='vendor_dec'>
+                <elip-view class='title'>贵重流速加快立法和捷克首都</elip-view>
+                <flex-view>
+                  <label class='Istop'>置顶</label>
+                  <label class='Isactivity'>商家活动</label>
+                </flex-view>
+              </flex-view>
+            </flex-view>
+            <flex-view cross='center' class='call_phone'>
+              <i class='iconfont icon-phone'></i>拨打电话</flex-view>
+          </flex-view>
+          <view class='vendor_text'>
+            <elip-view line='4'>
+              “世界很复杂，百度更懂你”，百度翻译拥有网页版和手机APP等多种产品形态，此外还针对开发者提供开放云接口服务，日均响应上亿次翻译请求。除文本翻译外，结合用户多样性的翻译需求，推出网页翻译、网络释义、海量例句、权威词典、离线翻译、语音翻译、对话翻译、实用口语、拍照翻译、AR翻译、趣味配音等功能，同时还针对对译文质量要求较高的用户，提供人工翻译服务，让用户畅享每一次翻译体验。
+            </elip-view>
+          </view>
+          <flex-view main='between'>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/19/01/08/b0f5273b64712ce5f0631d07b90e46d9.jpg!/fw/688/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/19/01/23/fae9ff1e7718c4b64b97940fe73e55d9.jpg!/fw/688/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/18/12/28/f9235395b7774a1efeb6340f57c78876.jpg!/fw/322/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/19/01/09/47b6dd51c89cff83cd4e9798e7a10cd6.jpg!/fw/322/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+          </flex-view>
+          <view class='location'>
+            <flex-view cross='center'>
+              <i class="iconfont icon-location"></i>闵行区宜山路1768号福维克大厦206</flex-view>
+
+            <view class='operation_box'>
+              <view class='iconfont icon-top-s'></view>
+              <view class='operation_detail'>
+                <flex-view cross='center' main='between'>
+
+                  <flex-view cross='center'>
+                    <view class='op_item'>
+                      <flex-view cross='center'>
+                        <i class='iconfont icon-appreciate'></i>
+                        <label>12345</label>人浏览</flex-view>
+                    </view>
+                    <view class='op_item'>
+                      <flex-view cross='center'>
+                        <i class='iconfont icon-attention'></i>
+                        <label>45</label>人赞</flex-view>
+                    </view>
+                  </flex-view>
+                  <view class='operation_url'>
+                    <flex-view cross='center'>
+                      <label>查看详情</label>
+                    </flex-view>
+                  </view>
+                </flex-view>
+
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+
+  </view>
+</tab-view>

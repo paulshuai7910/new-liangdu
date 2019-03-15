@@ -1,0 +1,147 @@
+@import '../../style/icon-font.wxss';
+
+.menu-warp {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+
+.menu-box {
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 1000;
+}
+
+.blur {
+  filter: blur(5px);
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.menu-item {
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-box .menu-top {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 1rpx;
+}
+
+.menu-more {
+  transform: rotate(135deg);
+}
+
+.show-menu {
+  animation: show-more-menu 0.25s linear 1;
+  transform: rotate(0deg);
+}
+
+.hide-menu {
+  animation: hide-more-menu 0.25s linear 1;
+  transform: rotate(135deg);
+}
+
+@keyframes show-more-menu {
+  0% {
+    transform: rotate(135deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hide-more-menu {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+.menu-navigator {
+  position: relative;
+}
+
+.menu-navigator label {
+  position: absolute;
+  width: 200rpx;
+  font-size: 24rpx;
+  display: flex;
+  flex-shrink: 0;
+  left: -210rpx;
+  color: #333;
+  justify-content: flex-end;
+}
+.menu-navigator button{
+  width: 80rpx;
+  height: 80rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-list {
+  padding-left: 200rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.menu-list-content {
+  transform: translateY(100%);
+}
+
+.menu-list-hide {
+  display: none;
+  animation: menu-list-hide 0.25s linear 1;
+  transform: translateY(100%);
+}
+
+@keyframes menu-list-hide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.menu-list-show {
+  display: inherit;
+  animation: menu-list-show 0.25s linear 1;
+  transform: translateY(0);
+}
+
+@keyframes menu-list-show {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

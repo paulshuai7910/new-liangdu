@@ -1,0 +1,10 @@
+<view class='from_box'>
+  <view class='from_content'>
+    <input-view type="text" title="用户名" placeholder="请输入用户名" value="{{AccountName}}" bind:input="onInput" name="AccountName"></input-view>
+    <input-view password title="密码" placeholder="请输入密码" value="{{AccountPassword}}" bind:input="onInput" name="AccountPassword"></input-view>
+    <view class='login_btn'>
+      <button-view type="primary" btn-style="width:100%;height:80rpx;line-height: 80rpx;border-radius:0;" bindtap='LogonThePlatform'>平台登录</button-view>
+      <button-view type="success" btn-style="width:100%;height:80rpx;line-height: 80rpx;border-radius:0;" bindtap='LogonTheVendor'>商家登录</button-view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,57 @@
+<view style='padding:30rpx;background-color: #fff;'>
+  <view class='tips'>
+    免责声明：平台发布的所有信息（收费、免费）;平台只负责发布、展示,与平台本身无关。平台不负任何责任。
+  </view>
+</view>
+<navigator url='../vendorenter/vendorenter' hover-class='none' class='enter_tip'>
+  <flex-view cross='center'>
+    <view class='iconfont icon-shopfill'></view>
+    <view style='flex:1;'>
+      <flex-view cross='center' main='between'>
+        <flex-view dir="top">
+          <view style='font-size:30rpx;'>我是商家，入驻银企联盟</view>
+          <view style='font-size:26rpx;color:#888;'>超低成本、网络宣传、简单有效、方便快捷</view>
+        </flex-view>
+        <view class='iconfont icon-right'></view>
+      </flex-view>
+    </view>
+  </flex-view>
+</navigator>
+<view class='text_tip'>
+  <flex-view cross='center' main="center">
+    <i class='iconfont icon-discoverfill'></i>
+    选择需要发布的栏目
+  </flex-view>
+</view>
+<view style='background-color:#fff;'>
+  <flex-view wrap='wrap'>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+      <label>分类1</label>
+    </flex-view>
+  </flex-view>
+</view>

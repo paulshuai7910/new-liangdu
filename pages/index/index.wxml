@@ -1,0 +1,306 @@
+<menu-view menuList='{{shareData}}'>
+  <view class='box-1'>
+    <flex-view cross='center'>
+      <flex-view cross='center' class='box-left' bindtap='getWeizhi'>
+        <view class="iconfont icon-location"></view>
+        <view>六盘水</view>
+      </flex-view>
+      <flex-view cross='center' class='box-right'>
+        <view class="iconfont icon-search"></view>
+        <input placeholder='请输入搜索内容'></input>
+      </flex-view>
+    </flex-view>
+  </view>
+  <swiper indicator-dots autoplay circular class='box-2'>
+    <swiper-item>
+      <view class='image-bg' style='background:url(http://bpic.588ku.com/element_banner/20/19/01/491a9bf2daa5be81de2753d8797700d1.jpg!/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+    </swiper-item>
+    <swiper-item>
+      <view class='image-bg' style='background:url(http://bpic.588ku.com/element_banner/20/19/02/0f1e586abf382c185c7008fe75cd4723.jpg!/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+    </swiper-item>
+    <swiper-item>
+      <view class='image-bg' style='background:url(http://bpic.588ku.com/element_banner/20/19/01/c8876667930b9ae0eaabf93a7da60643.jpg!/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+    </swiper-item>
+  </swiper>
+  <view class='box-3'>
+    <flex-view main='between'>
+      <flex-view cross='center' class='weather-info'>
+        <view class='weather-img' style='background:url(http://m.weather.com.cn/img/{{weatherInfo.WeatherInfo.weatherinfo.img2}}) center no-repeat ;'>
+        </view>
+        <flex-view dir='top' class='weather-desc'>
+          <label>{{weatherInfo.WeatherInfo.weatherinfo.city}} {{weatherInfo.WeatherInfo.weatherinfo.temp1}}~{{weatherInfo.WeatherInfo.weatherinfo.temp2}} {{weatherInfo.WeatherInfo.weatherinfo.weather}}</label>
+          <label>{{weatherInfo.Date}} {{weatherInfo.Week}}</label>
+        </flex-view>
+      </flex-view>
+      <flex-view dir='top' main='center'>
+        <view>总浏览量：
+          <label style='color:#db384c'>112354</label>
+        </view>
+        <view>总量：
+          <label style='color:#80bceb'>154</label>
+        </view>
+      </flex-view>
+    </flex-view>
+  </view>
+  <scroll-view scroll-x class='box-4'>
+    <flex-view>
+      <flex-view cross='center' main='center' class='category-item'>
+        <flex-view dir='top' cross='center' main='center' class='category-info'>
+          <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+          <label>分类1</label>
+        </flex-view>
+      </flex-view>
+
+      <flex-view cross='center' main='center' class='category-item'>
+        <flex-view dir='top' cross='center' main='center' class='category-info'>
+          <image src='http://bpic.588ku.com/element_pic/18/12/20/3b3e0647e44ff18a62e84c981e892368.jpg!/fw/248/unsharp/true/compress/true'></image>
+          <label>分类1</label>
+        </flex-view>
+      </flex-view>
+
+      <flex-view cross='center' main='center' class='category-item'>
+        <flex-view dir='top' cross='center' main='center' class='category-info'>
+          <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+          <label>分类1</label>
+        </flex-view>
+      </flex-view>
+
+      <flex-view cross='center' main='center' class='category-item'>
+        <flex-view dir='top' cross='center' main='center' class='category-info'>
+          <image src='http://bpic.588ku.com/element_pic/19/01/18/2e198a0674e0c5a84739faf456627d11.jpg!/fw/248/unsharp/true/compress/true'></image>
+          <label>分类1</label>
+        </flex-view>
+      </flex-view>
+
+      <flex-view cross='center' main='center' class='category-item'>
+        <flex-view dir='top' cross='center' main='center' class='category-info'>
+          <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+          <label>分类1</label>
+        </flex-view>
+      </flex-view>
+
+      <flex-view cross='center' main='center' class='category-item'>
+        <flex-view dir='top' cross='center' main='center' class='category-info'>
+          <image src='http://bpic.588ku.com/element_pic/18/09/12/e88197d274886eb8de2b0f9ea7d42b6b.jpg!/fw/248/unsharp/true/compress/true'></image>
+          <label>分类1</label>
+        </flex-view>
+      </flex-view>
+    </flex-view>
+  </scroll-view>
+  <view class='box-5'>
+    <flex-view cross='center'>
+      <view class="iconfont icon-notificationfill"></view>
+      <swiper autoplay vertical circular style='flex:1;height:32rpx;'>
+        <swiper-item>通知————1</swiper-item>
+        <swiper-item>通知————2</swiper-item>
+        <swiper-item>通知————3</swiper-item>
+        <swiper-item>通知————4</swiper-item>
+      </swiper>
+    </flex-view>
+  </view>
+  <view class='box-6'>
+    <view class='box-title'>
+      <flex-view cross='center' main='between'>
+        <flex-view cross='center'>
+          <view class="iconfont icon-noticefill"></view>
+          <label>最新入驻</label>
+        </flex-view>
+        <view class="iconfont icon-right"></view>
+      </flex-view>
+    </view>
+    <scroll-view scroll-x>
+      <flex-view>
+        <flex-view cross='center' main='center' class='category-item'>
+          <flex-view dir='top' cross='center' main='center' class='category-info'>
+            <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <label>分类1</label>
+          </flex-view>
+        </flex-view>
+
+        <flex-view cross='center' main='center' class='category-item'>
+          <flex-view dir='top' cross='center' main='center' class='category-info'>
+            <image src='http://bpic.588ku.com/element_pic/18/12/20/3b3e0647e44ff18a62e84c981e892368.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <label>分类1</label>
+          </flex-view>
+        </flex-view>
+
+        <flex-view cross='center' main='center' class='category-item'>
+          <flex-view dir='top' cross='center' main='center' class='category-info'>
+            <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <label>分类1</label>
+          </flex-view>
+        </flex-view>
+
+        <flex-view cross='center' main='center' class='category-item'>
+          <flex-view dir='top' cross='center' main='center' class='category-info'>
+            <image src='http://bpic.588ku.com/element_pic/19/01/18/2e198a0674e0c5a84739faf456627d11.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <label>分类1</label>
+          </flex-view>
+        </flex-view>
+
+        <flex-view cross='center' main='center' class='category-item'>
+          <flex-view dir='top' cross='center' main='center' class='category-info'>
+            <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <label>分类1</label>
+          </flex-view>
+        </flex-view>
+
+        <flex-view cross='center' main='center' class='category-item'>
+          <flex-view dir='top' cross='center' main='center' class='category-info'>
+            <image src='http://bpic.588ku.com/element_pic/18/09/12/e88197d274886eb8de2b0f9ea7d42b6b.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <label>分类1</label>
+          </flex-view>
+        </flex-view>
+      </flex-view>
+    </scroll-view>
+  </view>
+
+  <tab-view tabs="{{tabs}}" animate="true" lineWidth="50" tabStyle="border-bottom:1rpx solid #f0f0f0;z-index:6;flex:1;margin-top: 10rpx;position: sticky;top: 0;z-index: 99;">
+    <view wx:for="{{tabs}}" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
+      <label>{{item.title}}</label>
+    </view>
+    <view wx:for="{{tabs}}" slot="tab__conter-{{index}}" style='position: relative;'>
+      <view class='vendor_list' wx:if="{{index==0}}">
+        <view class='vendor_item'>
+          <flex-view class='vendor_info' cross='center' main='between'>
+            <flex-view cross='center'>
+              <image src='http://bpic.588ku.com/original_pic/18/11/25/6c43f9645e35eef5512192068a087258.jpg!/fw/248/unsharp/true/compress/true'></image>
+              <flex-view dir='top' class='vendor_dec'>
+                <elip-view class='title'>贵重流速加快立法和捷克首都</elip-view>
+                <flex-view>
+                  <label class='Istop'>置顶</label>
+                  <label class='Isactivity'>商家活动</label>
+                </flex-view>
+              </flex-view>
+            </flex-view>
+            <flex-view cross='center' class='call_phone'>
+              <i class='iconfont icon-phone'></i>拨打电话</flex-view>
+          </flex-view>
+          <view class='vendor_text'>
+            <elip-view line='4'>
+              “世界很复杂，百度更懂你”，百度翻译拥有网页版和手机APP等多种产品形态，此外还针对开发者提供开放云接口服务，日均响应上亿次翻译请求。除文本翻译外，结合用户多样性的翻译需求，推出网页翻译、网络释义、海量例句、权威词典、离线翻译、语音翻译、对话翻译、实用口语、拍照翻译、AR翻译、趣味配音等功能，同时还针对对译文质量要求较高的用户，提供人工翻译服务，让用户畅享每一次翻译体验。
+            </elip-view>
+          </view>
+          <flex-view main='between'>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/19/01/08/b0f5273b64712ce5f0631d07b90e46d9.jpg!/fw/688/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/19/01/23/fae9ff1e7718c4b64b97940fe73e55d9.jpg!/fw/688/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/18/12/28/f9235395b7774a1efeb6340f57c78876.jpg!/fw/322/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+            <view class='vendor_imageitem' style='background:url(http://bpic.588ku.com/special_image/19/01/09/47b6dd51c89cff83cd4e9798e7a10cd6.jpg!/fw/322/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+          </flex-view>
+          <view class='location'>
+            <flex-view cross='center'>
+              <i class="iconfont icon-location"></i>闵行区宜山路1768号福维克大厦206</flex-view>
+
+            <view class='operation_box'>
+              <view class='iconfont icon-top-s'></view>
+              <view class='operation_detail'>
+                <flex-view cross='center' main='between'>
+
+                  <flex-view cross='center'>
+                    <view class='op_item'>
+                      <flex-view cross='center'>
+                        <i class='iconfont icon-appreciate'></i>
+                        <label>12345</label>人浏览</flex-view>
+                    </view>
+                    <view class='op_item'>
+                      <flex-view cross='center'>
+                        <i class='iconfont icon-attention'></i>
+                        <label>45</label>人赞</flex-view>
+                    </view>
+                  </flex-view>
+                  <view class='operation_url'>
+                    <flex-view cross='center'>
+                      <label>查看详情</label>
+                    </flex-view>
+                  </view>
+                </flex-view>
+
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+      <view class='vendor_list' wx:if="{{index==1}}">
+        <view class='vendor_hot'>
+          <flex-view cross='center'>
+            <image src='http://bpic.588ku.com/original_pic/18/11/25/6c43f9645e35eef5512192068a087258.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <flex-view dir='top' style='flex:1'>
+              <flex-view main='between' cross='center' class='vendor_top_info'>
+
+
+                <flex-view dir='top'>
+                  <elip-view class='vendor_name'>
+                    <label class='Istop'>置顶</label>十分艰苦撒旦发很健康</elip-view>
+                  <flex-view>
+                    <view class="iconfont icon-location"></view>
+                    <elip-view class='vendor_address'>宜山路1768几号是大家看法</elip-view>
+                  </flex-view>
+                </flex-view>
+                <i class='iconfont icon-phone'></i>
+
+
+              </flex-view>
+              <flex-view main='between' class='vendor_bottom_info'>
+                <flex-view class='grade_start'>
+                  <view class="iconfont icon-favorfill"></view>
+                  <view class="iconfont icon-favorfill"></view>
+                  <view class="iconfont icon-favorfill"></view>
+                  <view class="iconfont icon-favorfill"></view>
+                  <view class="iconfont icon-favorfill"></view>
+                </flex-view>
+                <view>人气：0</view>
+                <view class='tip'>1666.00KM</view>
+              </flex-view>
+            </flex-view>
+          </flex-view>
+        </view>
+
+      </view>
+
+      <view class='vendor_list' wx:if="{{index==2}}">
+        <view class='vendor_hot'>
+          <flex-view cross='center'>
+            <image src='http://bpic.588ku.com/original_pic/18/11/25/6c43f9645e35eef5512192068a087258.jpg!/fw/248/unsharp/true/compress/true'></image>
+            <flex-view dir='top' style='flex:1'>
+              <flex-view main='between' cross='center' class='vendor_top_info'>
+
+
+                <flex-view dir='top'>
+                  <elip-view class='vendor_name'>
+                    <label class='Istop'>置顶</label>十分艰苦撒旦发很健康</elip-view>
+                  <flex-view cross='center'>
+                    <view class="iconfont icon-mobile" style='color:#d5d5d5'></view>
+                    <elip-view class='vendor_address'>13774434903</elip-view>
+                  </flex-view>
+                </flex-view>
+                <i class='iconfont icon-phone'></i>
+
+
+              </flex-view>
+              <flex-view main='between' class='vendor_bottom_info'>
+                <flex-view>
+                  <view class="iconfont icon-location"></view>
+                  <elip-view class='vendor_address'>宜山路1768几号是大家看法</elip-view>
+                </flex-view>
+                <view class='tip'>1666.00KM</view>
+              </flex-view>
+            </flex-view>
+          </flex-view>
+        </view>
+
+      </view>
+    </view>
+  </tab-view>
+
+</menu-view>
+
+<cover-view class='location_auth' wx:if="{{showLocationAuthBox}}">
+  <cover-view class='location_auth_box'>
+    <cover-image src='http://appicon-1253690476.file.myqcloud.com/auth/liangdu_location_auth.png'></cover-image>
+    <cover-view class='location_auth_desc'>
+      需要获取您的地理位置，以便提供更好的本地服务。
+    </cover-view>
+    <button type='primary' open-type='openSetting'>立即设置</button>
+  </cover-view>
+</cover-view>

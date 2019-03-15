@@ -1,0 +1,367 @@
+@import '../../style/icon-font.wxss';
+
+.box-1 {
+  background-color: #3c78d8;
+  height: 80rpx;
+  padding: 0 30rpx 0 20rpx;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.box-1 .box-left {
+  font-size: 24rpx;
+  color: #fff;
+  padding: 0 30rpx 0 0;
+}
+
+.box-1 .box-left .iconfont {
+  padding: 0 5rpx;
+}
+
+.box-1 .box-right {
+  background-color: #fff;
+  font-size: 26rpx;
+  flex: 1;
+  border-radius: 50rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  height: 60rpx;
+}
+
+.box-1 .box-right .iconfont {
+  padding: 0 5rpx 0 0;
+  color: #808080;
+}
+
+.box-2 {
+  height: 350rpx;
+  background-color: red;
+}
+
+.box-2  .image-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.box-3 {
+  height: 120rpx;
+  background: #fff;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  padding: 0 40rpx 0 10rpx;
+}
+
+.box-3 .weather-info .weather-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.box-4 {
+  height: 160rpx;
+  background: gray;
+  font-size: 26rpx;
+}
+
+.box-4 .category-item {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.box-4 .category-info {
+  width: 160rpx;
+  height: 160rpx;
+  background-color: #fff;
+  line-height: 40rpx;
+}
+
+.box-4 .category-info image {
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.box-5 {
+  height: 80rpx;
+  background-color: #fff;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+  margin: 10rpx 0;
+}
+
+.box-5 .iconfont {
+  padding-right: 10rpx;
+  color: #f64349;
+}
+
+.box-6 {
+  background-color: greenyellow;
+}
+
+.box-6 .box-title {
+  height: 60rpx;
+  font-size: 24rpx;
+  background: #fff;
+  padding: 0 10rpx;
+  border-bottom: 1rpx solid #f8f8f8;
+}
+
+.box-6 .icon-noticefill {
+  font-size: 26rpx;
+  margin-right: 5rpx;
+  color: #f7781f;
+}
+
+.box-6 .icon-right {
+  color: #888;
+  font-size: 26rpx;
+}
+
+.box-6 .category-item {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.box-6 .category-info {
+  width: 160rpx;
+  height: 185rpx;
+  background-color: #fff;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  padding: 10rpx 0;
+}
+
+.box-6 .category-info image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 8rpx;
+}
+
+.tab__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 24rpx;
+  height: 80rpx;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.stickyBar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.vendor_item {
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.vendor_info image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+}
+
+.vendor_info .title {
+  font-size: 30rpx;
+  color: #008aff;
+}
+
+.vendor_info label {
+  display: inline-block;
+  font-size: 24rpx;
+  margin: 10rpx 10rpx 0 0;
+  padding: 3rpx 10rpx;
+  border-radius: 4rpx;
+  line-height: 40rpx;
+}
+
+.vendor_info .Istop {
+  background: #f7781f;
+  color: #fff;
+}
+
+.vendor_dec {
+  width: 350rpx;
+}
+
+.vendor_info .Isactivity {
+  background: #1adba3;
+  color: #fff;
+}
+
+.call_phone {
+  font-size: 26rpx;
+  color: #fff;
+  background-color: #ec404c;
+  padding: 10rpx 20rpx;
+  border-radius: 8rpx;
+}
+
+.call_phone .iconfont {
+  font-size: 36rpx;
+  margin-right: 6rpx;
+}
+
+.vendor_text {
+  font-size: 26rpx;
+  line-height: 40rpx;
+  margin: 10rpx 0 20rpx 0;
+  color: #6f6f6f;
+}
+
+.vendor_imageitem {
+  width: 160rpx;
+  height: 160rpx;
+  background-color: red;
+}
+
+.location {
+  font-size: 24rpx;
+  color: #008aff;
+  margin-top: 20rpx;
+}
+
+.location .icon-location {
+  color: red;
+  margin-right: 5rpx;
+}
+
+.operation_box {
+  color: #888;
+}
+
+.operation_box .icon-top-s {
+  color: #f8f8f8;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  position: relative;
+  bottom: -10rpx;
+}
+
+.operation_detail .iconfont {
+  color: #888;
+}
+
+.operation_detail {
+  background-color: #f8f8f8;
+  padding: 10rpx 20rpx;
+}
+
+.operation_detail label {
+  color: #008aff;
+  display: initial;
+}
+
+.op_item {
+  margin-right: 20rpx;
+}
+
+.operation_detail .icon-right {
+  font-size: 24rpx;
+  line-height: 24rpx;
+}
+
+.operation_url label {
+  color: #008aff;
+}
+
+.vendor_hot {
+  padding: 20rpx;
+  margin-bottom: 10rpx;
+  background: #fff;
+}
+
+.vendor_hot image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.vendor_hot .vendor_name{
+  font-size: 30rpx;
+}
+.vendor_hot .vendor_address{
+  font-size: 24rpx;
+  color: #888;
+}
+.vendor_hot .icon-location{
+  color: red;
+}
+.vendor_hot .icon-phone{
+  font-size: 60rpx;
+  color: #ec404c;
+}
+.vendor_hot .vendor_top_info{
+  flex: 1;
+  padding-left: 20rpx;
+}
+.vendor_name label {
+  display: inline-block;
+  font-size: 24rpx;
+  margin: 10rpx 10rpx 0 0;
+  padding: 2rpx 10rpx;
+  border-radius: 4rpx;
+  
+}
+.vendor_name .Istop {
+  background: #f7781f;
+  color: #fff;
+}
+.vendor_bottom_info{
+  padding-left:20rpx;
+  font-size: 24rpx;
+  color: #d5d5d5;
+  line-height: 40rpx;
+}
+.grade_start{
+  color: #d5d5d5;
+}
+.vendor_bottom_info .tip{
+  color: #ec404c;
+}
+
+.location_auth{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location_auth cover-image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.location_auth_box{
+  width: 500rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 5rpx 20rpx rgba(0, 0, 0, .3);
+  display: flex;
+  box-sizing: border-box;
+  padding:30rpx 30rpx 40rpx 30rpx;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.location_auth_desc{
+  font-size: 32rpx;
+  line-height: 50rpx;
+  white-space:normal;
+  text-align: center;
+  margin-top: 20rpx;
+  color: #333;
+}
+.location_auth_box button{
+  width: 100%;
+  font-size: 30rpx;
+  margin-top: 80rpx;
+}

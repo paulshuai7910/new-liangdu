@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "flex-view": "../../widget/flex-view/flex-view",
+    "auth-view": "../../widget/auth-view/auth-view",
+    "list-view": "../../widget/list-view/list-view"
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../style/icon-font.wxss';
+.tips{
+  background-color: #e7f5fe;
+  color: #888;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+  border-radius: 4rpx;
+}
+.enter_tip{
+  background-color: #fff;
+  padding:30rpx 40rpx;
+  border-top:1rpx solid #f8f8f8; 
+}
+.enter_tip .icon-shopfill{
+  font-size: 50rpx;
+  color: #f7781f;
+  padding-right: 20rpx;
+}
+.text_tip{
+  background-color: #fff;
+  border-top: 1rpx solid #f8f8f8;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  color: #888;
+}
+.text_tip .icon-discoverfill{
+  margin-right: 10rpx;
+  color: #ec404c;
+}
+.category_item{
+  width: 20%;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  padding: 20rpx;
+}
+
+.category_item image{
+  width: 80rpx;
+  height: 80rpx;
+}

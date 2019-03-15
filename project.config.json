@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx1ad5fed768e3e096",
+	"projectname": "laingdu",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/index/index",
+					"query": "uid=1"
+				},
+				{
+					"id": -1,
+					"name": "购物车",
+					"pathName": "pages/UserCenter/UserCenter",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "商家登录",
+					"pathName": "shopadmin/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分类",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/cart/cart",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家",
+					"pathName": "pages/vendorlist/vendorlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家入驻",
+					"pathName": "pages/vendorenter/vendorenter",
+					"scene": null
+				}
+			]
+		}
+	}
+}

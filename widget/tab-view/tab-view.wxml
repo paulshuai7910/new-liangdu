@@ -1,0 +1,47 @@
+<flex-view dir="{{viewDir}}" cross='start' cross='stretch' wx:if="{{pattern==1}}">
+  <!--
+  viewDir==left 水平X轴滚动
+  viewDir==tio  水平Y轴滚动
+  -->
+  <scroll-view scroll-x="{{viewDir=='left'?'true':'false'}}" scroll-y="{{viewDir=='left'?'false':'true'}}" class="tab__ceiling" style="{{tabStyle}};">
+    <!--
+    dir==left 水平X轴滚动
+    dir==tio  水平Y轴滚动
+    -->
+    <flex-view dir="{{dir}}" class='tab__navbar-warp'>
+      <flex-view wx:for="{{tabs}}" wx:for-index="index" data-tapid='{{index}}' style='{{dir=="left"?"width:"+(100/tabs.length)+"%":""}};color:{{defaultIndex==index?activeTextColor:textColor}};{{index===defaultIndex?activeTabStyle:""}};' bindtap='tabchange'
+        class='tab__index'>
+        <slot name="tab__navbar-item-{{index}}"></slot>
+      </flex-view>
+    </flex-view>
+    <view class='tab__line--{{dir==="left"?"bottom":"left"}} {{(animate && startAnimate)?(dir==="left"?"tab__line--bottom-animate":"tab__line--left-animate"):""}}' style='{{dir==="left"?"width:"+width*2+"rpx":"height:"+height*2+"rpx"}};background-color:{{lineColor}};{{dir==="left"?"left:"+(left*2)+"rpx":"top:"+(top*2)+"rpx"}}'></view>
+  </scroll-view>
+
+  <view wx:for="{{tabs}}" wx:if="{{index===defaultIndex}}" style='flex-grow:1;'>
+    <slot name="tab__conter-{{index}}"></slot>
+  </view>
+</flex-view>
+
+
+<flex-view dir="top" cross='start' cross='stretch' wx:else>
+  <!--
+  viewDir==left 水平X轴滚动
+  viewDir==tio  水平Y轴滚动
+  -->
+  <scroll-view scroll-x="{{viewDir=='left'?'true':'false'}}" scroll-y="{{viewDir=='left'?'false':'true'}}" class="tab__ceiling" style="{{tabStyle}};">
+    <!--
+    dir==left 水平X轴滚动
+    dir==tio  水平Y轴滚动
+    -->
+    <flex-view dir="{{dir}}" cross='center' class='tab__navbar-warp'>
+      <view wx:for="{{tabs}}" wx:for-index="index" data-tapid='{{index}}' style='color:{{defaultIndex==index?activeTextColor:textColor}};{{index===defaultIndex?activeTabStyle:""}};flex-shrink:0' bindtap='tabchange'
+        class='tab__index {{index===defaultIndex?"select_index":""}}'>
+        <slot name="tab__navbar-item-{{index}}"></slot>
+      </view>
+    </flex-view>
+  </scroll-view>
+
+  <view wx:for="{{tabs}}" wx:if="{{index===defaultIndex}}" style='flex-grow:1;'>
+    <slot name="tab__conter-{{index}}"></slot>
+  </view>
+</flex-view>

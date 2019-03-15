@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tab-view": "../../widget/tab-view/tab-view",
+    "flex-view": "../../widget/flex-view/flex-view",
+    "price-view": "../../widget/price-view/price-view",
+    "elip-view": "../../widget/elip-view/elip-view"
+  }
+}

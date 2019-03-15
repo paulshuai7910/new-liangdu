@@ -1,0 +1,799 @@
+/* widget/diy-view/diy-view.wxss */
+@import '../../style/icon-font.wxss';
+
+.ms image {
+  width: 100%;
+  height: 100%;
+}
+
+.diy-warp {
+  clear: both;
+}
+
+.s1 {
+  width: 100%;
+  height: 750rpx;
+}
+
+.s2h {
+  width: 100%;
+  height: 375rpx;
+}
+
+.s2v {
+  width: 50%;
+  height: 749rpx;
+}
+
+.s4h {
+  width: 100%;
+  height: 188rpx;
+}
+
+.s4v {
+  width: 50%;
+  height: 375rpx;
+}
+
+.s8v {
+  width: 25%;
+  height: 375rpx;
+}
+
+.s8h {
+  width: 50%;
+  height: 188rpx;
+}
+
+.s16 {
+  width: 25%;
+  height: 188rpx;
+}
+
+.s250h {
+  width: 100%;
+  height: 500rpx;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.borderStyle {
+  border: 1rpx solid #f8f8f8;
+}
+
+.m-RichText {
+  box-sizing: border-box;
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+}
+
+.m-scrollBox {
+  box-sizing: border-box;
+  clear: both;
+  text-align: center;
+}
+
+.m-scrollBox-img {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  vertical-align: middle;
+  display: inline;
+}
+
+.plist-warp {
+  padding: 0 2%;
+  display: block;
+}
+
+.plist-item-2 {
+  width: 47%;
+  margin: 1.5%;
+  flex-grow: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.plist-item-2 .p-img {
+  width: 100%;
+  height: 340rpx;
+}
+
+.plist-item-1 {
+  width: 97%;
+  margin: 1.5%;
+  flex-grow: 0;
+  background-color: #fff;
+}
+
+.plist-item-1 .p-img {
+  width: 100%;
+  height: 696rpx;
+}
+
+.plist-item-3 {
+  width: 97%;
+  margin: 1.5%;
+  flex-grow: 0;
+  background-color: #fff;
+}
+
+.plist-item-3 .p-img {
+  width: 100%;
+  height: 322rpx;
+}
+
+.plist-item-4 {
+  width: 100%;
+  margin: 1.5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  background-color: #fff;
+}
+
+.plist-item-4 .p-img {
+  width: 270rpx;
+  height: 270rpx;
+}
+
+.plist-item-5 {
+  width: 270rpx;
+  margin: 1.5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.plist-item-5 .p-img {
+  width: 270rpx;
+  height: 270rpx;
+}
+
+.p-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.p-info {
+  padding: 20rpx;
+  line-height: 40rpx;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.plist-item-4 .p-info {
+  padding: 20rpx;
+  line-height: 40rpx;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p-points {
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.p-name {
+  font-size: 28rpx;
+}
+
+.p-price {
+  font-size: 32rpx;
+  line-height: 50rpx;
+}
+
+.c1 {
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+  background: url(http://kkdfile.kukeduo.cn/appicon/pc1.png) center no-repeat;
+  background-size: cover;
+}
+
+.c2 {
+  position: relative;
+  width: 50rpx;
+  height: 50rpx;
+  background: url(http://kkdfile.kukeduo.cn/appicon/pc2.png) center no-repeat;
+  background-size: cover;
+}
+
+.c3 {
+  position: relative;
+  text-align: center;
+  width: 100rpx;
+  height: 60rpx;
+  margin-right: -30rpx;
+  margin-top: 6rpx;
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 50rpx;
+  background: url(http://kkdfile.kukeduo.cn/appicon/pc3.png) center no-repeat;
+  background-size: cover;
+}
+
+.c4 {
+  position: relative;
+  text-align: center;
+  padding: 4rpx 20rpx;
+  border-radius: 4rpx;
+  color: #fff;
+  font-size: 24rpx;
+  background-color: #db384c;
+}
+
+.boxGrids {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  clear: both;
+}
+
+.boxGridsBorder {
+  border-top: 1rpx solid #d9d9d9;
+  border-left: 1rpx solid #d9d9d9;
+}
+
+.boxGrid {
+  position: relative;
+  float: left;
+  padding: 40rpx 20rpx;
+  width: 33.33333333%;
+  box-sizing: border-box;
+}
+
+.boxGridBorder {
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.boxGrid:active {
+  background-color: #ececec;
+}
+
+.boxGridIcon {
+  width: 68rpx;
+  height: 68rpx;
+  margin: 0 auto;
+}
+
+.boxGridIcon image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.boxGridIcon + .boxGridLabel {
+  margin-top: 10rpx;
+}
+
+.boxGridLabel {
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.boxFlexItem {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.boxFlexItem image {
+  vertical-align: top;
+}
+
+.notice {
+  height: 64rpx;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  clear: both;
+  position: relative;
+}
+
+.notice-icon {
+  height: 40rpx;
+  padding: 0 10rpx 0 24rpx;
+}
+
+.notice-icon image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.notice-content {
+  height: 40rpx;
+  font-size: 24rpx;
+  flex: 1;
+  overflow: hidden;
+}
+
+.notice-content swiper-item {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-right: 20rpx;
+  color: #20273c;
+  width: 50rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.notice-arrow {
+  height: 40rpx;
+  padding: 0 24rpx 0 24rpx;
+}
+
+.head-title {
+  clear: both;
+  box-sizing: border-box;
+  height: 80rpx;
+  background-color: #fff;
+  padding: 20rpx 16rpx;
+  display: flex;
+  line-height: 40rpx;
+  align-items: center;
+  position: relative;
+}
+
+.head-title image {
+  height: 36rpx;
+  max-width: 36rpx;
+}
+
+.title-label {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-left: 8rpx;
+  max-width: 180rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.title-linke {
+  color: #9b9b9b;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30rpx;
+}
+
+.title-linke .icon-right {
+  font-size: 16rpx;
+  margin-left: 8rpx;
+}
+
+.countdown-box {
+  margin-left: 12px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+}
+
+.time1 text {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #db384c;
+  text-align: center;
+  border-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time2 text {
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  background-color: #db384c;
+  color: #fff;
+  text-align: center;
+  border-radius: 4rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.countdown-box label {
+  display: inline-block;
+  padding: 0 4rpx;
+  color: #9b9b9b;
+}
+
+.time-box {
+  margin-left: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.cttitle {
+  font-size: 24rpx;
+  color: #9b9b9b;
+}
+
+/*营销活动1*/
+
+.mark {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.activity-warp {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.activity-box1 {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.activity-box1 .activity-item {
+  width: 280rpx;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx 10rpx 30rpx;
+  margin-right: 10rpx;
+  background-color: #fff;
+}
+
+.activity-box1 .activity-img {
+  width: 220rpx;
+  height: 220rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-img image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.activity-countdown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 44rpx;
+  width: 100%;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 44rpx;
+}
+
+.activity-countdown view {
+  display: inline-block;
+}
+
+.activity-name {
+  font-size: 24rpx;
+  color: #000;
+  line-height: 36rpx;
+  padding: 10rpx 0;
+  height: 68rpx;
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.activity-price {
+  display: flex;
+  height: 40rpx;
+  align-items: center;
+  position: relative;
+  color: #db384c;
+}
+
+.activity-price .price {
+  font-size: 28rpx;
+}
+
+.activity-price .tip {
+  font-size: 24rpx;
+  position: absolute;
+  right: 0;
+}
+
+.del-price {
+  color: #9b9b9b;
+  font-size: 24rpx;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.activity-desc {
+  font-size: 24rpx;
+  color: #9b9b9b;
+  line-height: 60rpx;
+}
+
+/*营销活动*/
+
+/*营销活动2*/
+
+.activity-box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activity-box2 .activity-item {
+  width: 49.3%;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx 10rpx 30rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 10rpx;
+}
+
+.activity-box2 .activity-img {
+  width: 306rpx;
+  height: 306rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.activity-box2 .tip {
+  color: #ff8b96;
+  padding: 8rpx 16rpx;
+  background-color: #fff4f5;
+  border-radius: 20rpx;
+  height: 40rpx;
+  line-height: 24rpx;
+  box-sizing: border-box;
+}
+
+/*营销活动*/
+
+/*营销活动3*/
+
+.activity-box3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.activity-box3 .activity-item {
+  display: flex;
+  height: 270rpx;
+  box-sizing: border-box;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #f8f8f8;
+  width: 100%;
+}
+
+.activity-box3 .activity-img {
+  width: 228rpx;
+  height: 228rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+
+.activity-box3 .activity-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.activity-box3 .tip {
+  color: #ff8b96;
+  padding: 8rpx 16rpx;
+  height: 40rpx;
+  line-height: 24rpx;
+  background-color: #fff4f5;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  margin-right: 10rpx;
+}
+
+.activity-box3 .activity-desc {
+  display: flex;
+  align-items: center;
+}
+
+.activity-box3  .activity-btn {
+  font-size: 24rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  background-color: #db384c;
+  color: #fff;
+  border-radius: 8rpx;
+  position: absolute;
+  right: 0;
+}
+
+.activity-box3 .disable {
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+  background-color: #9b9b9b;
+  color: #fff;
+  border-radius: 8rpx;
+}
+
+/*营销活动*/
+
+/*优惠券*/
+
+.coupon_box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+.coupon_item {
+  width: 110px;
+  height: 81px;
+  background: url(http://appicon-1253690476.file.myqcloud.com/coupon/coupon_bg.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.coupon_price {
+  width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+}
+
+.coupon_desc {
+  width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+
+.coupon_img {
+  width: 110px;
+  height: 81px;
+  flex-shrink: 0;
+}
+
+.coupon_img image {
+  display: block;
+  width: 110px;
+  height: 81px;
+}
+
+/*优惠券*/
+
+.official-account {
+  position: relative;
+  clear: both;
+}
+
+.formBox {
+  padding: 50rpx;
+  background-color: white;
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.formBox .fromInput {
+  margin-bottom: 10rpx;
+}
+
+.formBox label {
+  font-size: 24rpx;
+  display: block;
+  line-height: 50rpx;
+  color: #888;
+  margin-top: 10rpx;
+}
+.InputText{
+  font-size: 24rpx;
+  box-sizing: border-box;
+  height: 70rpx;
+  border: none;
+  padding: 10rpx;
+  background-color: transparent;
+  width: 100%;
+  border: 2rpx solid #d5d5d5;
+  border-radius: 8rpx;
+  line-height: 50rpx;
+}
+.fromInput .picker{
+  font-size: 24rpx;
+  box-sizing: border-box;
+  height: 70rpx;
+  border: none;
+  padding: 10rpx;
+  background-color: transparent;
+  width: 100%;
+  border: 2rpx solid #d5d5d5;
+  border-radius: 8rpx;
+  line-height: 50rpx;
+  color: #888;
+}
+
+.formSubmit {
+  text-align: center;
+}
+
+.fromInput textarea {
+  box-sizing: border-box;
+  height: 200rpx;
+  padding: 10rpx;
+  background-color: transparent;
+  width: 100%;
+  border: 2rpx solid #d5d5d5;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+}
+
+.fromCK_item {
+  vertical-align: middle;
+  line-height: 30px;
+  position: relative;
+}
+
+.fromCK_item text {
+  font-size: 24rpx;
+}
+
+.formButtom {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  background-color: rgb(219, 56, 76);
+  color: white;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+}

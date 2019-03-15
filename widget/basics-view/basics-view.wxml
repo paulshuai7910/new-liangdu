@@ -1,0 +1,89 @@
+<view class='shop__warp'>
+  <view class="shop__banner-warp" style='background: url({{_shopInfo.shopSign}}) center #fff;background-size: cover;'>
+    <view class='shop__banner-center'>
+    </view>
+  </view>
+  <view class='shop__info-warp'>
+    <view class='shop__info-center'>
+      <flex-view dir="top">
+        <flex-view cross='start' main="between">
+          <elip-view class='shop__info-name'>{{_shopInfo.shopName}}</elip-view>
+          <view class='shop__info-logo'>
+            <image src='{{_shopInfo.logo}}'></image>
+          </view>
+        </flex-view>
+        <elip-view class='shop_notice'>公告：{{_shopInfo.shopNotice}}</elip-view>
+        <scroll-view scroll-x>
+          <flex-view wrap="nowrap" class='coupon__box'>
+            <flex-view class='coupon__item'>
+              <flex-view dir="top" main="center" class="coupon__info">
+                <price-view icon="sub" decimal="none" class='coupon__price' value="20"></price-view>
+                <elip-view>满30可用</elip-view>
+                <elip-view>有效期至2018-11-60</elip-view>
+              </flex-view>
+              <view class='coupon__get'>已领取</view>
+            </flex-view>
+            <flex-view class='coupon__item'>
+              <flex-view dir="top" main="center" class="coupon__info">
+                <price-view icon="sub" decimal="none" class='coupon__price' value="20"></price-view>
+                <elip-view>满30可用</elip-view>
+                <elip-view>有效期至2018-11-60</elip-view>
+              </flex-view>
+              <view class='coupon__get'>领取</view>
+            </flex-view>
+            <flex-view class='coupon__item'>
+              <flex-view dir="top" main="center" class="coupon__info">
+                <price-view icon="sub" decimal="none" class='coupon__price' value="20"></price-view>
+                <elip-view>满30可用</elip-view>
+                <elip-view>有效期至2018-11-60</elip-view>
+              </flex-view>
+              <view class='coupon__get'>领取</view>
+            </flex-view>
+            <flex-view class='coupon__item'>
+              <flex-view dir="top" main="center" class="coupon__info">
+                <price-view icon="sub" decimal="none" class='coupon__price' value="20"></price-view>
+                <elip-view>满30可用</elip-view>
+                <elip-view>有效期至2018-11-60</elip-view>
+              </flex-view>
+              <view class='coupon__get'>领取</view>
+            </flex-view>
+          </flex-view>
+        </scroll-view>
+      </flex-view>
+    </view>
+  </view>
+  <tab-view tabs="{{tabs}}" animate="true" lineWidth="50" tabStyle="border-bottom:1rpx solid #f0f0f0;z-index:6;flex:1" class="stickyBar" >
+    <view wx:for="{{tabs}}" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
+      <view wx:if='{{item.icon}}' class='iconfont icon-{{item.icon}}'></view>
+      <view wx:else class='tab__text'>{{item.text}}</view>
+      <label>{{item.title}}</label>
+    </view>
+    <view wx:for="{{tabs}}" slot="tab__conter-{{index}}" style='position: relative;'>
+
+      <tab-view wx:if="{{index===0 && categories.length>0}}" lineWidth="20" tabs="{{categories}}" dir="top" viewDir="left" tabStyle="width:160rpx;z-index:5;top:100rpx;height:{{height*2}}rpx;background-color:#f7f8f9;" activeTabStyle="background-color:#fff;" >
+        <view wx:for="{{categories}}" slot="tab__navbar-item-{{index}}" class='tab__item'>
+          <elip-view line="2">{{item.name}}</elip-view>
+        </view>
+        <view wx:for="{{categories}}" slot="tab__conter-{{index}}" class='tab__conter--list'>
+        
+          <flex-view class='pitem'>
+            <flex-view class='pinfo' cross="stretch">
+              <image src='http://kkdfile.kukeduo.cn//201810/8628800577744842/sourcefile/044cc7724bf54f7bb35673c533643d78.jpg'></image>
+              <flex-view dir="top" main="between">
+                <elip-view class="pname">大鼓元气米线</elip-view>
+                <elip-view class="psale_name">米黄色规划感受到法国还是个受到广泛环境米黄色规划感受到法国还是个受到广泛环境米黄色规划感受到法国还是个受到广泛环境</elip-view>
+                <elip-view class="psale_num">售出：204份</elip-view>
+                <flex-view>  
+                  <price-view icon="sub" style='color:#db384c' value="99.00"></price-view>
+                </flex-view>  
+              </flex-view>
+            </flex-view>  
+          </flex-view>
+
+        </view>
+      </tab-view>
+
+    </view>
+
+  </tab-view>
+</view>
