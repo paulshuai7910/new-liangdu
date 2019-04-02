@@ -1,22 +1,21 @@
-
+@import '../../style/icon-font.wxss';
 .banner {
-  position: relative;
-  height: 300rpx;
-  overflow: hidden;
+  position: relative;height:565rpx;background-color: #f5f5f5;
+  /* height: 300rpx; */width: 750rpx;display: flex;flex-direction: column;align-items: center;
+  overflow: hidden;margin-bottom:27rpx;
 }
-
+.banner .banner_user{height:295rpx;width:100%;}
 .banner_info_bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 300rpx;
+  height: 255rpx;
   filter:blur(15rpx);
   transform: scale(1.2);
 }
-
 .banner_info {
-  height: 300rpx;
+  height: 295rpx;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -25,20 +24,66 @@
   position: absolute;
   z-index: 2;
 }
-
 .banner_info .photo {
   width: 150rpx;
   height: 150rpx;
   border-radius: 100%;
   overflow: hidden;
 }
-
 .banner_info .nickName {
   font-size: 32rpx;
 }
-.list-box{
+.banner_info .iconshezhi{position: absolute;left: 57rpx;top: 28rpx;font-size: 57rpx;color: #fff;}
+.banner_info .info_right{position: absolute;right: 0;top: 0;width: 180rpx;padding-top: 47rpx;box-sizing: border-box;}
+.banner_info .info_right .lab{width: 180rpx;height:60rpx;border-top-left-radius: 60rpx;
+  border-bottom-left-radius: 60rpx;background-color: #fff;margin-bottom: 40rpx;display: flex;justify-content: flex-start;align-items: center;
+}
+.banner_info .info_right .lab .iconfont{font-size: 45rpx;color: #f44343;margin-left: 25rpx;margin-right: 10rpx;}
+.banner_info .info_right .lab view{font-size: 24rpx;color: #f44343;}
+.banner_info .info_right .lab .iconzuanshi{border: 2rpx solid #f44343;border-radius: 50%;font-size: 30rpx;padding: 5rpx;box-sizing: border-box;}
+
+
+.banner .banner_order{width: 690rpx;border-radius: 10rpx;background-color: #fff;height:273rpx;}
+.banner .banner_order .order_header{border-bottom:2rpx solid #ededed;
+  display: flex;flex-direction: row;justify-content: space-between;box-sizing: border-box;padding: 0 27rpx;}
+.banner .banner_order .order_header .header_left{display: flex;justify-content: flex-start;align-items: center;}
+.banner .banner_order .order_header .header_left view,
+.banner .banner_order .order_header .header_left text{font-size: 26rpx;color: #666;line-height:90rpx;}
+.banner .banner_order .order_header .header_left .iconfont{width: 50rpx;height:50rpx;border-radius: 50%;text-align: center;line-height: 50rpx;margin-right: 16rpx;background-color: #FFA569;color: #fff;}
+.banner .banner_order .order_header .header_right{display: flex;justify-content: flex-end;}
+.banner .banner_order .order_header .header_right view{font-size: 26rpx;color: #666;line-height:90rpx;}
+.banner .banner_order .order_classs{display: flex;justify-content: space-around;}
+.banner .banner_order .order_classs .clas_item{
+  display: flex;flex-direction: column;align-items: center;padding-top: 30rpx;box-sizing: border-box;
+}
+.banner .banner_order .order_classs .clas_item .iconfont{font-size: 66rpx;color: #ccc;}
+.banner .banner_order .order_classs .clas_item text{color: #000;font-size: 24rpx;}
+/* .list-box{
   background: #fff;
 }
 .list-box navigator{
   border-bottom: 1rpx solid #d9d9d9;
+} */
+.list{width: 690rpx;margin: 0 auto;margin-bottom: 30rpx;border-radius: 10rpx;}
+.list .box{width: 100%;background-color: #fff;padding: 0 27rpx;box-sizing:border-box;
+  border-bottom: 2rpx solid #ededed;display: flex;justify-content: space-between;
 }
+.list .box .box_left{display: flex;justify-content: flex-start;align-items: center;}
+.list .box .box_right{display: flex;justify-content: flex-end;align-items: center;}
+.list .box .box_left .left_txt,.list .box .box_right .right_txt{line-height: 80rpx;font-size: 24rpx;color: #666;}
+.list .box .box_right .icon-right{color: #ccc;}
+.list .box .box_left .iconfont{width: 50rpx;height:50rpx;border-radius: 50%;text-align: center;line-height: 50rpx;margin-right: 16rpx;}
+.color1{background-color: #FFA569;color: #fff;}
+.color2{background-color: #FF8448;color: #fff;}
+.color3{background-color: #FC8587;color: #fff;}
+.color4{background-color: #FCD06D;color: #fff;}
+.color5{background-color: #2BC174;color: #fff;}
+.color6{background-color: #FE7F88;color: #fff;}
+.color7{background-color: #54E0C1;color: #fff;}
+.color8{background-color: #32C1ED;color: #BCEEFF;}
+.color9{background-color: #6596F3;color: #fff;}
+.color10{background-color: #96C7FF;color: #fff;}
+.color11{background-color: #DFA1F7;color: #fff;}
+
+
+

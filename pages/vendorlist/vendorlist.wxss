@@ -1,22 +1,25 @@
 @import '../../style/icon-font.wxss';
+.enter{width: 750rpx;background-color: #fff;padding: 25rpx;box-sizing: border-box;
+display: flex;justify-content: flex-start;align-items: center;}
+.enter .title{width:160rpx;height:60rpx;text-align: center;background-color: #ec6b66;
+color: #fff;font-size: 26rpx;line-height: 60rpx;border-radius: 10rpx;margin-right:10rpx;}
+.enter swiper-item{display: flex;justify-content: flex-start;align-items: center;font-size: 24rpx;color: #666;}
+.enter text{font-size: 24rpx;}
+.enter .cun{display: block;border:10rpx solid #000;background-color: #000;margin-right:10rpx;border-radius: 50%;}
+.enter .name{color: #ec404c;}
 .box-1 {
-  background-color: #3c78d8;
-  height: 80rpx;
-  padding: 0 30rpx 0 20rpx;
-  position: sticky;
-  top: 0;
-  z-index: 99;
+  background-color: #fff;display: flex;justify-content: flex-start;
+  padding: 30rpx 30rpx 17rpx 30rpx;box-sizing: border-box;
 }
-.box-1 .box-right {
+.box-1 input {
+  width: 525rpx;height: 75rpx;border: 5rpx solid #eb574f;text-align: left;padding: 0 20rpx;
   background-color: #fff;
   font-size: 26rpx;
-  flex: 1;
-  border-radius: 50rpx;
-  box-sizing: border-box;
-  padding: 0 20rpx;
-  height: 60rpx;
+  box-sizing: border-box;border-top-left-radius: 75rpx;border-bottom-left-radius: 75rpx;
 }
-
+.box-1 .search_btn{height: 75rpx;width:160rpx;color: #fff;background-color: #ec404c;
+  line-height: 75rpx;border-top-right-radius: 75rpx;border-bottom-right-radius: 75rpx;
+text-align: center;font-size: 28rpx;}
 .box-1 .box-right .iconfont {
   padding: 0 5rpx 0 0;
   color: #808080;
@@ -91,6 +94,7 @@
   flex: 1;
   padding-left: 20rpx;
 }
+.vendor_hot .vendor_top_info .icondianhua{font-size: 55rpx;color: #a52e1a;}
 .vendor_name label {
   display: inline-block;
   font-size: 24rpx;
@@ -110,7 +114,7 @@
   line-height: 40rpx;
 }
 .grade_start{
-  color: #d5d5d5;
+  color: #f7ce46;
 }
 .vendor_bottom_info .tip{
   color: #ec404c;

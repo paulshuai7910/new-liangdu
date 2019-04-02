@@ -1,22 +1,12 @@
 // widget/menu-view/menu-view.js
 let navigate=require('../../lib/navigate.js');
 Component({
-  /**
-   * 组件的属性列表
-   */
   properties: {
     menuList: Array || []
   },
-  /**
-   * 组件的初始数据
-   */
   data: {
     _showMenu: 0
   },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
     showMenu: function() {
       if (this.data._showMenu != 1) {
@@ -48,7 +38,6 @@ Component({
       })
     },
     menuNavigate:function(e){
-      console.log(e.currentTarget.dataset.url);
       navigate.navigateTo(e.currentTarget.dataset.url);
     }
   }

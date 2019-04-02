@@ -6,17 +6,21 @@
   border-bottom:1rpx solid #d5d5d5; 
 }
 .category_item{
+  height:152rpx;
   width: 20%;
-  box-sizing: border-box;
-  font-size: 24rpx;
-  line-height: 40rpx;
-  padding: 20rpx;
+  box-sizing: border-box;display: flex;flex-direction: column;align-items:center;
 }
-
-.category_item image{
-  width: 80rpx;
-  height: 80rpx;
-}
+.category_item label{line-height:50rpx;color: #666;font-size: 24rpx;}
+.category_item .iconfont{font-size: 75rpx;}
+.category_item .iconfangwu{color: #f1b54c;}
+.category_item .iconzhaopinyuangongshenpibiao{color: #77ddd1;}
+.category_item .iconganbei{color: #d44240;}
+.category_item .icon066bianjizhanghu{color: #797b9c;}
+.category_item .iconliaotian{color: #d6a8a6;}
+.category_item .iconhuabanfuben{color: #000;}
+.category_item .iconqiche{color: #bfa674;}
+.category_item .iconxiongzhang{color: #f4c6a3;}
+.category_item .iconmn_shangpin_fill{color: #7b9df8;}
 
 .tab__item {
   flex: 1;
@@ -138,7 +142,7 @@
   font-size: 24rpx;
   line-height: 24rpx;
 }
-
+.operation_url{display: flex;align-items: center;justify-content: flex-end;}
 .operation_url label {
-  color: #008aff;
+  color: #008aff;line-height: 30rpx;
 }

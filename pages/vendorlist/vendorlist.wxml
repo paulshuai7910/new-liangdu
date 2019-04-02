@@ -1,19 +1,14 @@
 <view class='box-1'>
-  <flex-view cross='center'>
-    <flex-view cross='center' class='box-right'>
-      <view class="iconfont icon-search"></view>
-      <input placeholder='请输入搜索内容'></input>
-    </flex-view>
-  </flex-view>
+  <input placeholder='请输入搜索内容'></input>
+  <view class="search_btn">搜索</view>
 </view>
 <view class='box-5'>
   <flex-view cross='center'>
-    <view class="iconfont icon-notificationfill"></view>
+    <view class="iconfont iconlaba"></view>
     <swiper autoplay vertical circular style='flex:1;height:32rpx;'>
-      <swiper-item>通知————1</swiper-item>
-      <swiper-item>通知————2</swiper-item>
-      <swiper-item>通知————3</swiper-item>
-      <swiper-item>通知————4</swiper-item>
+      <swiper-item>九龙商城全场九折，秋季大甩卖</swiper-item>
+      <swiper-item>龙湖金融岛，要您回家置业</swiper-item>
+      <swiper-item>农业银行大额存款利率上调</swiper-item>
     </swiper>
   </flex-view>
 </view>
@@ -21,42 +16,60 @@
 <view style='background-color:#fff;'>
   <flex-view wrap='wrap'>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_01.png'></image>
+      <label>金融传媒</label>
     </flex-view>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_02.png'></image>
+      <label>生活购物</label>
     </flex-view>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_03.png'></image>
+      <label>美食餐饮</label>
     </flex-view>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_04.png'></image>
+      <label>酒店娱乐</label>
     </flex-view>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_05.png'></image>
+      <label>服饰鞋帽</label>
     </flex-view>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_06.png'></image>
+      <label>亲子教育</label>
     </flex-view>
     <flex-view dir='top' cross='center' main='center' class='category_item'>
-      <image src='http://bpic.588ku.com/element_pic/18/12/15/934b5c2a5a6041ecb33cd02978fd3286.jpg!/fw/248/unsharp/true/compress/true'></image>
-      <label>分类1</label>
+      <image src='../../img/shop_07.png'></image>
+      <label>健康管理</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='../../img/shop_08.png'></image>
+      <label>汽车房产</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='../../img/shop_09.png'></image>
+      <label>家居装修</label>
+    </flex-view>
+    <flex-view dir='top' cross='center' main='center' class='category_item'>
+      <image src='../../img/shop_10.png'></image>
+      <label>结婚摄影</label>
     </flex-view>
   </flex-view>
 </view>
-
+<view class="enter">
+  <view class="title">我要入驻</view>
+  <swiper autoplay vertical circular style='flex:1;height:32rpx;'>
+    <swiper-item><text class="cun"></text> 恭喜【<text class="name">诺贝尔瓷砖</text>】成功入驻</swiper-item>
+    <swiper-item><text class="cun"></text> 恭喜【<text class="name">诺贝尔瓷砖</text>】成功入驻</swiper-item>
+  </swiper>
+</view>
 
 <tab-view tabs="{{tabs}}" animate="true" lineWidth="50" tabStyle="border-bottom:1rpx solid #f0f0f0;z-index:6;flex:1;margin-top: 10rpx;position: sticky;top: 0;z-index: 99;">
-  <view wx:for="{{tabs}}" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
+  <view wx:for="{{tabs}}" wx:key="index" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
     <label>{{item.title}}</label>
   </view>
-  <view wx:for="{{tabs}}" slot="tab__conter-{{index}}" style='position: relative;'>
+  <view wx:for="{{tabs}}" wx:key="index" slot="tab__conter-{{index}}" style='position: relative;'>
 
     <view class='vendor_list'>
       <view class='vendor_hot'>
@@ -64,29 +77,21 @@
           <image src='http://bpic.588ku.com/original_pic/18/11/25/6c43f9645e35eef5512192068a087258.jpg!/fw/248/unsharp/true/compress/true'></image>
           <flex-view dir='top' style='flex:1'>
             <flex-view main='between' cross='center' class='vendor_top_info'>
-
-
               <flex-view dir='top'>
                 <elip-view class='vendor_name'>
                   <label class='Istop'>置顶</label>十分艰苦撒旦发很健康</elip-view>
                 <flex-view>
-                  <view class="iconfont icon-location"></view>
+                  <view class="iconfont iconweizhi"></view>
                   <elip-view class='vendor_address'>宜山路1768几号是大家看法</elip-view>
                 </flex-view>
               </flex-view>
-              <i class='iconfont icon-phone'></i>
-
-
+              <i class='iconfont icondianhua'></i>
             </flex-view>
             <flex-view main='between' class='vendor_bottom_info'>
               <flex-view class='grade_start'>
-                <view class="iconfont icon-favorfill"></view>
-                <view class="iconfont icon-favorfill"></view>
-                <view class="iconfont icon-favorfill"></view>
-                <view class="iconfont icon-favorfill"></view>
-                <view class="iconfont icon-favorfill"></view>
+                <view wx:key="index" wx:for="{{star}}" class="iconfont iconxing"></view>
               </flex-view>
-              <view>人气：0</view>
+              <view>人气：13</view>
               <view class='tip'>1666.00KM</view>
             </flex-view>
           </flex-view>

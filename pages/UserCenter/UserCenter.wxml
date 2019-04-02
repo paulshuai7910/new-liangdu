@@ -1,21 +1,50 @@
 <view class='banner'>
-  <view class='banner_info_bg'>
-    <open-data type="userAvatarUrl"></open-data>
-  </view>
-  <view class='banner_info'>
-    <view class='photo'>
-      <open-data type="userAvatarUrl"></open-data>
+  <view class="banner_user">
+    <!-- <view class='banner_info_bg'> -->
+      <open-data class='banner_info_bg' type="userAvatarUrl"></open-data>
+    <!-- </view> -->
+    <view class='banner_info'>
+      <view class='photo'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view class='nickName'>
+        <open-data type="userNickName"></open-data>
+      </view>
+      <view class="iconfont iconshezhi"></view>
+      <view class="info_right">
+        <view class="lab">
+          <view class="iconfont iconqiandao"></view>
+          <view >我要签到</view>
+        </view>
+        <view class="lab">
+          <view class="iconfont iconjifen"></view>
+          <view >我的积分</view>
+        </view>
+      </view>
     </view>
-    <view class='nickName'>
-      <open-data type="userNickName"></open-data>
+  </view>
+  <view class="banner_order">
+    <view class="order_header">
+      <view class="header_left"><view class="iconfont icondingdan"></view><text>我的订单</text></view>
+      <view class="header_right"><view >查看全部订单</view><view class="iconfont icon-right"></view></view>
+    </view>
+    <view class="order_classs">
+      <view class="clas_item" wx:for="{{orderInfo}}" wx:key="index">
+        <view class="iconfont {{item.icon}}"></view>
+        <text>{{item.desc}}</text>
+      </view>
     </view>
   </view>
 </view>
-<view class='list-box'>
-  <navigator hover-class='none'>
-    <list-view title="我要入驻" desc="轻松合作，商机无限" mode="none"></list-view>
-  </navigator>
-  <navigator url='../../shopadmin/login/login' hover-class='none'>
-    <list-view title="商家入口" mode="none" icon='icon-shop_fill' ></list-view>
-  </navigator>
+<view class="list" wx:for="{{list}}" wx:key="index">
+  <view class="box" wx:for="{{item.art}}" wx:for-item="artitem" data-uri="{{artitem.uri}}" wx:key="{{artitem.uri}}" bindtap="goToArtPage">
+    <view class="box_left">
+      <view class="iconfont {{artitem.iconleft}} {{artitem.classname}}"></view>
+      <view class="left_txt">{{artitem.title}}</view>
+    </view>
+    <view class="box_right">
+      <view class="right_txt">{{artitem.desc}}</view>
+      <view class="iconfont icon-right"></view>
+    </view>
+  </view>
 </view>

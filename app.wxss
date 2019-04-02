@@ -3,3 +3,6 @@ page {
   background-color: #f4f4f4;
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
 }
+view{box-sizing: border-box;color: #666;font-size: 24rpx;}
+text,swiper,input{box-sizing: border-box;}
+image{display: block;width: 50rpx;height: 50rpx;}

@@ -1,0 +1,102 @@
+<view class="contain">
+  <view class="swiper">
+    <swiper indicator-dots autoplay circular bindtap="goTodetail" class="banner">
+      <swiper-item>
+        <view class='image-bg' style='background:url(http://bpic.588ku.com/element_banner/20/19/01/491a9bf2daa5be81de2753d8797700d1.jpg!/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+      </swiper-item>
+      <swiper-item>
+        <view class='image-bg' style='background:url(http://bpic.588ku.com/element_banner/20/19/02/0f1e586abf382c185c7008fe75cd4723.jpg!/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+      </swiper-item>
+      <swiper-item>
+        <view class='image-bg' style='background:url(http://bpic.588ku.com/element_banner/20/19/01/c8876667930b9ae0eaabf93a7da60643.jpg!/unsharp/true/compress/true) center no-repeat #3c78d8;background-size: cover;'></view>
+      </swiper-item>
+    </swiper>
+    <view class='info'>
+      <view class="iconfont iconlaba"></view>
+      <swiper autoplay vertical="{{falsse}}" duration="{{3000}}" interval="{{0}}" circular style='flex:1;' class="info-swiper" bindtap="goTodetail">
+        <swiper-item>九龙卫浴aaaaaaaaaa</swiper-item>
+        <swiper-item>九龙卫浴bbbbbbbbb</swiper-item>
+        <swiper-item>九龙卫浴cccccccccc</swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class="shop">
+    <view class="shop_header border">
+      <view class="header_title">
+        <view class="title_logo"><image src="../../img/comp_logo.png" mode="aspectFit" /></view>
+        <view class="title_right">
+          <text class="shop_name">六盘水农商区政府支行</text>
+          <view class="icon_box">
+            <view class="iconfont iconxing"></view>
+            <view class="iconfont iconxing"></view>
+            <view class="iconfont iconxing"></view>
+            <view class="iconfont iconxing"></view>
+            <view class="iconfont iconxing"></view>
+            <text>5分</text>
+          </view>
+        </view>
+      </view>
+      <view class="header_share">分享：0 浏览量：277</view>
+    </view>
+    <view class="shop_local border">
+      <view class="local"><view class="iconfont iconditu"></view><text>钟山区钟山中路39号</text></view>
+      <view class="local photo">
+        <view class="local">
+          <view class="iconfont iconnoun__cc"></view>
+          <text>09：00-18：00</text>
+        </view>
+        <view class="local">
+          <view class="iconfont icon-mobile"></view>
+          <text class="mobile">电话</text>
+        </view>
+      </view>
+    </view>
+    <view class="shop_card">
+      <view class="card_icon"><view class="iconfont iconyinxingqia"></view><text>刷卡支付</text></view>
+      <view class="card_icon"><view class="iconfont iconWiFi"></view><text>免费wifi</text></view>
+      <view class="card_icon"><view class="iconfont icontingchechang"></view><text>免费停车</text></view>
+      <view class="card_icon"><view class="iconfont iconjinyan"></view><text>禁止吸烟</text></view>
+      <view class="card_icon"><view class="iconfont iconmen"></view><text>提供包间</text></view>
+      <view class="card_icon"><view class="iconfont iconshafa"></view><text>沙发休闲</text></view>
+    </view>
+  </view>
+  <view class="info">
+    <view class="info_tabs" bindtap="bindTabs">
+      <view class="left {{cur?'cur':''}}"  bindtap="bindTabsLeft">商家详情</view>
+      <view class="right {{cur?'':'cur'}}" bindtap="bindTabsRifht">用户评论</view>
+    </view>
+    <view class="detail" wx:if="{{cur}}">
+      <text>1、资深老品牌，专业、安全更放心</text>
+      <text>2、诚信报价，全包费用更划算</text>
+      <text>3、多年银行合作渠道，匹配优选贷款方案</text>
+      <text>4、无前置费用，诚意金,银行放款成功后再收费,品牌推广渠道强，值得信赖</text>
+      <text>5、贷款赎楼一条龙操作，自有资金更安全</text>
+    </view>
+    <view class="comment" wx:if="{{!cur}}">
+     <view class="comment_title">
+        <view class="title_logo"><image src="../../img/comp_logo.png" mode="aspectFit" /></view>
+        <view class="title_right">
+          <text class="shop_name">小张张</text>
+          <view class="icon_box">
+            <view class="iconfont iconxing"></view>
+            <view class="iconfont iconxing"></view>
+            <view class="iconfont iconxing"></view>
+            <text>3分</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="abs">
+    <view class="item item1">转发</view>
+    <view class="item item2">评论</view>
+    <view class="item item3">微信</view>
+    <view class="item item4">分享</view>
+  </view>
+  <view class="fixedbtm">
+    <view class="item"><view class="iconfont icon-home"></view><text >首页</text></view>
+    <view class="item"><view class="iconfont iconshoucang"></view><text >收藏</text></view>
+    <view class="item"><view class="iconfont iconpaper-airplane"></view><text >导航</text></view>
+    <view class="item photo"><text>一键拨号</text><text>0858-8160550</text></view>
+  </view>
+</view>

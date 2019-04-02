@@ -1,23 +1,19 @@
 // pages/vendorlist/vendorlist.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    star:[1,2,2,2,2],
     tabs: [{
-        title: '最新信息',
+        title: '附近',
         icon: '',
         content: null
       },
       {
-        title: '热门商家',
+        title: '新入',
         icon: '',
         content: null
       },
       {
-        title: '黄页114',
+        title: '热门',
         icon: '',
         content: null
       }

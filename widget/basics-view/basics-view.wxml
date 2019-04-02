@@ -53,18 +53,18 @@
     </view>
   </view>
   <tab-view tabs="{{tabs}}" animate="true" lineWidth="50" tabStyle="border-bottom:1rpx solid #f0f0f0;z-index:6;flex:1" class="stickyBar" >
-    <view wx:for="{{tabs}}" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
+    <view wx:for="{{tabs}}" key="index" slot="tab__navbar-item-{{index}}" class='tab__item tab__x'>
       <view wx:if='{{item.icon}}' class='iconfont icon-{{item.icon}}'></view>
       <view wx:else class='tab__text'>{{item.text}}</view>
       <label>{{item.title}}</label>
     </view>
-    <view wx:for="{{tabs}}" slot="tab__conter-{{index}}" style='position: relative;'>
+    <view wx:for="{{tabs}}" wx:key="index" slot="tab__conter-{{index}}" style='position: relative;'>
 
       <tab-view wx:if="{{index===0 && categories.length>0}}" lineWidth="20" tabs="{{categories}}" dir="top" viewDir="left" tabStyle="width:160rpx;z-index:5;top:100rpx;height:{{height*2}}rpx;background-color:#f7f8f9;" activeTabStyle="background-color:#fff;" >
-        <view wx:for="{{categories}}" slot="tab__navbar-item-{{index}}" class='tab__item'>
+        <view wx:for="{{categories}}" wx:key="index" slot="tab__navbar-item-{{index}}" class='tab__item'>
           <elip-view line="2">{{item.name}}</elip-view>
         </view>
-        <view wx:for="{{categories}}" slot="tab__conter-{{index}}" class='tab__conter--list'>
+        <view wx:for="{{categories}}" wx:key="index" slot="tab__conter-{{index}}" class='tab__conter--list'>
         
           <flex-view class='pitem'>
             <flex-view class='pinfo' cross="stretch">

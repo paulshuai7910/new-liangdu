@@ -1,46 +1,62 @@
 const $ = require('../../utils/util.js');
 // pages/category/category.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     tabs: [{
-      title: '最新信息',
+      title: '全部',
       icon: '',
       content: null
     },
     {
-      title: '热门商家',
-      icon: '',
+      title: '房屋信息',
+      icon: 'iconfangwu',
       content: null
     },
     {
-      title: '黄页114',
-      icon: '',
+      title: '求职招聘',
+      icon: 'iconzhaopinyuangongshenpibiao',
       content: null
       }, {
-        title: '最新信息',
-        icon: '',
+        title: '商家活动',
+        icon: 'iconganbei',
         content: null
       },
       {
-        title: '热门商家',
-        icon: '',
+        title: '寻人寻物',
+        icon: 'icon066bianjizhanghu',
         content: null
       },
       {
-        title: '黄页114',
-        icon: '',
+        title: '同城微聊',
+        icon: 'iconliaotian',
+        content: null
+      }
+      ,
+      {
+        title: '代办跑腿',
+        icon: 'iconhuabanfuben',
+        content: null
+      }
+      ,
+      {
+        title: '拼车出行',
+        icon: 'iconqiche',
+        content: null
+      }
+      ,
+      {
+        title: '家有宠物',
+        icon: 'iconxiongzhang',
+        content: null
+      }
+      ,
+      {
+        title: '二手闲置',
+        icon: 'iconmn_shangpin_fill',
         content: null
       }
     ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
   
   },

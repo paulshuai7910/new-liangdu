@@ -6,7 +6,7 @@
   padding: 0 30rpx 0 20rpx;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 99;overflow: hidden;
 }
 
 .box-1 .box-left {
@@ -35,7 +35,7 @@
 }
 
 .box-2 {
-  height: 350rpx;
+  height: 350rpx;overflow: hidden;
   background-color: red;
 }
 
@@ -44,67 +44,47 @@
   height: 100%;
 }
 
-.box-3 {
-  height: 120rpx;
-  background: #fff;
-  font-size: 24rpx;
-  line-height: 40rpx;
-  padding: 0 40rpx 0 10rpx;
+.box-3 {overflow: hidden;
+  box-sizing: border-box;padding: 0 20rpx;display: flex;flex-direction: row;margin-bottom:10rpx;
+  align-items: space-between;justify-content: space-between;background-color: #fff;
+}
+.box-3 .left{width: 190rpx;height: 150rpx;}
+.box-3 .left .iconfont{
+  font-size:100rpx;color: #ccc;line-height: 150rpx;text-align: center;
 }
 
-.box-3 .weather-info .weather-img {
-  width: 80rpx;
-  height: 80rpx;
+.box-3 .right{display: flex;flex-direction: column;box-sizing: border-box;padding-top: 15rpx;
+  width:550rpx;align-items: flex-start;justify-content: center;}
+.box-3 .right .name{font-size: 32rpx;line-height: 60rpx;text-align: left;color: #d77281;}
+.box-3 .right .desc{text-align: left;font-size: 24rpx;color: #d77281;}
+.box-4 {overflow: hidden;padding-top: 40rpx;box-sizing:border-box;
+  background: #fff;font-size: 26rpx;padding-bottom:34rpx;height: 220rpx;
 }
-
-.box-4 {
-  height: 160rpx;
-  background: gray;
-  font-size: 26rpx;
+.box-4 .info {
+  float: left;width: 150rpx;background-color: #fff;display: flex;flex-direction: column;align-items: center;
 }
-
-.box-4 .category-item {
-  box-sizing: border-box;
-  flex-shrink: 0;
+.box-4 .info .iconfont {font-size: 90rpx;color: #DA384C;}
+.box-4 .info label{line-height:50rpx;font-size: 24rpx;color: #333;}
+.box-5 {overflow: hidden;
+  height: 80rpx;display: flex;justify-content: space-between;
+  padding:0 20rpx;box-sizing: border-box;width:750rpx;
 }
-
-.box-4 .category-info {
-  width: 160rpx;
-  height: 160rpx;
-  background-color: #fff;
-  line-height: 40rpx;
-}
-
-.box-4 .category-info image {
-  width: 90rpx;
-  height: 90rpx;
-}
-
-.box-5 {
-  height: 80rpx;
-  background-color: #fff;
-  font-size: 24rpx;
-  padding: 0 20rpx;
-  margin: 10rpx 0;
-}
-
 .box-5 .iconfont {
-  padding-right: 10rpx;
-  color: #f64349;
+  color: #be444e;
 }
+.box-5 .left{width:650rpx;display: flex;justify-content: flex-start;}
+.box-5 .left swiper-item{font-size: 22rpx;color: #666;line-height: 32rpx;margin-left: 10rpx;}
 
-.box-6 {
-  background-color: greenyellow;
+.box-6 {overflow: hidden;}
+.box-6 .box-title {padding: 0 20rpx;box-sizing: border-box;
+  background: #fff;height: 80rpx;display: flex;justify-content: space-between;margin-bottom:15rpx;
 }
-
-.box-6 .box-title {
-  height: 60rpx;
-  font-size: 24rpx;
-  background: #fff;
-  padding: 0 10rpx;
-  border-bottom: 1rpx solid #f8f8f8;
-}
-
+.box-6 .box-title.cur{margin-bottom: 0;}
+.box-6 .box-title .title_left{display: flex;align-items: center;font-size: 24rpx;}
+.box-6 .box-title .title_left .iconfont{color: #e5526b;font-size: 40rpx;line-height: 80rpx;}
+.box-6 .box-title .title_left label{font-size: 32rpx;color: #000;line-height: 80rpx;}
+.box-6 .box-title .title_right{display: flex;align-items: center;font-size: 24rpx;color: #666;line-height: 80rpx;}
+.box-6 .box-title .title_right .icon-right{color:#ccc;font-size: 24rpx;line-height: 80rpx;}
 .box-6 .icon-noticefill {
   font-size: 26rpx;
   margin-right: 5rpx;
@@ -113,30 +93,27 @@
 
 .box-6 .icon-right {
   color: #888;
-  font-size: 26rpx;
 }
-
-.box-6 .category-item {
-  box-sizing: border-box;
-  flex-shrink: 0;
+.box-6 .box-caty{
+  width:750rpx;background-color: #f5f5f5;padding: 0 20rpx;
+  display: flex;flex-wrap: wrap;justify-content: space-around;
 }
-
-.box-6 .category-info {
-  width: 160rpx;
-  height: 185rpx;
-  background-color: #fff;
-  line-height: 40rpx;
-  font-size: 24rpx;
-  padding: 10rpx 0;
+.box-6 .box-caty .caty_item{position: relative;width:300rpx;height: 100rpx;
+  text-align: center;font-weight: bold;margin-bottom: 20rpx;
 }
+.box-6 .box-caty .caty_item image{width:100%;height:100%;}
+.box-6 .box-caty .caty_item text{
+  line-height:100rpx;display: block;z-index: 1;position: absolute;top: 0;left: 0;
+  width:100%;height:100%;color: #fff;display: block;background-color: rgba(0,0,0,0.5)}
+.box-6 .info_class{background-color: #ffffff;
+    display: flex;justify-content: flex-start;flex-wrap: wrap;padding:0 25rpx;box-sizing: border-box;
+  }
+.box-6 .info_class .info_item{width: 175rpx;height:203rpx;display: flex;flex-direction:column;align-items: center;justify-content: center;}
+.box-6 .info_class .info_item .iconfont{font-size: 67rpx;color: #c94650;margin-bottom:10rpx;}
+.box-6 .info_class .info_item text{font-size: 24rpx;color: #333;}
 
-.box-6 .category-info image {
-  width: 140rpx;
-  height: 140rpx;
-  border-radius: 8rpx;
-}
 
-.tab__item {
+.tab__item {overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,7 +6,7 @@
     <view class='menu-info'>
       <view class="menu-list">
         <view class="{{_showMenu==1?'menu-list-show':_showMenu==2?'menu-list-hide':'menu-list-content'}}">
-          <block wx:for="{{menuList}}">
+          <block wx:for="{{menuList}}" wx:key="index">
             <view class="menu-item menu-navigator" wx:if="{{item.key=='mobile'}}" data-phone='{{item.phone}}' bindtap='makePhoneCall'>
               <label>{{item.title}}</label>
               <i class="iconfont icon-{{item.key}}"></i>

@@ -14,7 +14,7 @@
   <!-- 第三个模板：轮播 -->
   <message-view wx:if="{{item.adType==3}}">
     <swiper class="m-scrollBox" style="height:{{item.ad3obj.height*2}}rpx;background-color:{{item.bgColor}}" autoplay="true" indicator-dots="true" circular="true">
-      <swiper-item wx:for="{{item.ad3obj.data}}" wx:for-item="items">
+      <swiper-item wx:for="{{item.ad3obj.data}}" wx:key="index" wx:for-item="items">
         <image lazy-load mode="scaleToFill" style="width:100%;height:{{item.ad3obj.height*2}}rpx;" src="{{items.path}}"></image>
       </swiper-item>
     </swiper>
@@ -57,7 +57,7 @@
     <scroll-view scroll-x wx:if="{{item.adType==6}}" style='clear:both'>
       <flex-view dir="{{item.ad6obj.flexDirection==0?'left':item.ad6obj.flexDirection==1?'right':item.ad6obj.flexDirection==2?'top':item.ad6obj.flexDirection==3?'bottom':'left'}}" main="{{item.ad6obj.justifyContent==0?'start':item.ad6obj.justifyContent==1?'end':item.ad6obj.justifyContent==2?'center':item.ad6obj.justifyContent==3?'between':item.ad6obj.justifyContent==4?'around':'start'}}"
         cross="{{item.ad6obj.alignItems==0?'start':item.ad6obj.alignItems==1?'end':item.ad6obj.alignItems==2?'center':item.ad6obj.alignItems==3?'baseline':item.ad6obj.alignItems==4?'stretch':'stretch'}}" wrap="{{item.ad6obj.flexWrap==0?'nowrap':item.ad6obj.flexWrap==1?'wrap':item.ad6obj.flexWrap==2?'reverse':'nowrap'}}">
-        <view wx:for="{{item.ad6obj.data}}" wx:for-item="items" class="{{item.ad6obj.width>1?'':'boxFlexItem'}}" style=" padding-top:{{item.ad6obj.padding_top*2}}rpx;padding-bottom:{{item.ad6obj.padding_bottom*2}}rpx;padding-left:{{item.ad6obj.padding_left*2}}rpx;padding-right:{{item.ad6obj.padding_right*2}}rpx; ">
+        <view wx:for="{{item.ad6obj.data}}" wx:key="index" wx:for-item="items" class="{{item.ad6obj.width>1?'':'boxFlexItem'}}" style=" padding-top:{{item.ad6obj.padding_top*2}}rpx;padding-bottom:{{item.ad6obj.padding_bottom*2}}rpx;padding-left:{{item.ad6obj.padding_left*2}}rpx;padding-right:{{item.ad6obj.padding_right*2}}rpx; ">
           <view wx:if="{{item.ad6obj.type==1}}" style="font-Size:{{item.ad6obj.fontSize*2}}rpx;color:{{item.ad6obj.fontColor}}">{{items.name}}</view>
           <image lazy-load mode="{{item.ad6obj.height<1?'widthFix':'scaleToFill'}}" wx:if="{{item.ad6obj.type==0}}" src="{{items.path}}" style="width:{{item.ad6obj.width>1?((item.ad6obj.width*2)+'rpx'):'100%'}};height:{{item.ad6obj.height>1?((item.ad6obj.height*2)+'rpx'):'auto'}}"></image>
         </view>
@@ -68,7 +68,7 @@
   <!-- 第七个模板：宫格 -->
   <message-view wx:if="{{item.adType==7}}">
     <view wx:if="{{item.adType==7}}" class="boxGrids {{item.ad7obj.border? 'boxGridsBorder': ''}} ">
-      <view class="boxGrid {{item.ad7obj.border? 'boxGridBorder': ''}} " wx:if="{{item.ad7obj.data.length>0}}" wx:for="{{item.ad7obj.data}}" wx:for-item="items" style="width:{{(100/item.ad7obj.column)}}%;padding-top:{{item.ad7obj.padding_top*2}}rpx;padding-bottom:{{item.ad7obj.padding_bottom*2}}rpx;padding-left:{{item.ad7obj.padding_left*2}}rpx;padding-right:{{item.ad7obj.padding_right*2}}rpx;background-color:{{item.bgColor}};">
+      <view class="boxGrid {{item.ad7obj.border? 'boxGridBorder': ''}} " wx:if="{{item.ad7obj.data.length>0}}" wx:for="{{item.ad7obj.data}}" wx:key="index" wx:for-item="items" style="width:{{(100/item.ad7obj.column)}}%;padding-top:{{item.ad7obj.padding_top*2}}rpx;padding-bottom:{{item.ad7obj.padding_bottom*2}}rpx;padding-left:{{item.ad7obj.padding_left*2}}rpx;padding-right:{{item.ad7obj.padding_right*2}}rpx;background-color:{{item.bgColor}};">
         <view class="boxGridIcon">
           <image lazy-load src="{{items.path}}"></image>
         </view>
@@ -92,7 +92,7 @@
   <!-- 第十一个模板-->
   <!-- 第十二个模板：动态表单-->
   <form class="formBox" bindsubmit="formSubmit" bindreset="formReset" wx:if="{{item.adType==13}}" style="background-color:{{item.bgColor}};">
-    <view wx:for="{{item.ad13obj.data}}" wx:for-item="items">
+    <view wx:for="{{item.ad13obj.data}}" wx:key="index" wx:for-item="items">
       <view class="fromInput" wx:if="{{items.type==1}}">
         <label style="color:{{item.ad13obj.labelColor}}">{{items.labelText}}</label>
         <input type='text' class='InputText' name="{{items.id}}" maxlength="200" placeholder="{{items.placeholderText}}" style='border-Color:{{items.borderColor}};color:{{item.ad13obj.textColor}}' />
@@ -113,14 +113,14 @@
       </view>
       <radio-group name="{{items.id}}" class="fromInput" wx:if="{{items.type==4}}">
         <label style="color:{{item.ad13obj.labelColor}}">{{items.labelText}}</label>
-        <view class="fromCK_item" wx:for="{{items.data}}" wx:for-item="info">
+        <view class="fromCK_item" wx:for="{{items.data}}" wx:key="index" wx:for-item="info">
           <radio color="{{items.selColor}}" value='{{info.text}}' />
           <text style="color:{{item.ad13obj.textColor}}">{{info.text}}</text>
         </view>
       </radio-group>
       <checkbox-group name="{{items.id}}" class="fromInput" wx:if="{{items.type==5}}">
         <label style="color:{{item.ad13obj.labelColor}}">{{items.labelText}}</label>
-        <view class="fromCK_item" wx:for="{{items.data}}" wx:for-item="info">
+        <view class="fromCK_item" wx:for="{{items.data}}" wx:key="index" wx:for-item="info">
           <checkbox color="{{items.selColor}}" value='{{info.text}}' />
           <text style="color:{{item.ad13obj.textColor}}">{{info.text}}</text>
         </view>
@@ -137,7 +137,7 @@
       <image src="{{item.ad14obj.image?item.ad14obj.image:'http://appicon-1253690476.file.myqcloud.com/notice/Notice1.png'}}"></image>
     </view>
     <swiper autoplay vertical="{{item.ad14obj.scrollDir==0?true:false}}" circular class="notice-content">
-      <swiper-item wx:for="{{item.ad14obj.data}}" wx:for-item="items" data-id="{{items.did}}" data-name="{{items.name}}" data-type="{{items.selectType}}" data-keyWord="{{items.keyWord}}" data-AppId="{{items.AppId}}" data-AppUrl="{{items.AppUrl}}" data-MinAppUrl="{{item.MinAppUrl}}"
+      <swiper-item wx:for="{{item.ad14obj.data}}" wx:key="index" wx:for-item="items" data-id="{{items.did}}" data-name="{{items.name}}" data-type="{{items.selectType}}" data-keyWord="{{items.keyWord}}" data-AppId="{{items.AppId}}" data-AppUrl="{{items.AppUrl}}" data-MinAppUrl="{{item.MinAppUrl}}"
         bindtap="tplGoToPage">
         <label style="color:{{item.ad14obj.fontColor}}">{{items.name}}</label>
       </swiper-item>
@@ -165,7 +165,7 @@
     <!--第一个布局-->
     <scroll-view scroll-x wx:if="{{item.ad16obj.layout==1}}" style="clear: both;">
       <view class="activity-box1">
-        <navigator url='../../pages/productdetail/productdetail?pid={{items.did}}' class="activity-item" wx:for="{{item.ad16obj.data}}" wx:for-item="items">
+        <navigator url='../../pages/productdetail/productdetail?pid={{items.did}}' class="activity-item" wx:key="index" wx:for="{{item.ad16obj.data}}" wx:for-item="items">
           <view class="activity-img">
             <image src="{{items.path}}" />
             <view class="activity-countdown" wx:if="{{item.ad16obj.isCountdown}}" style="background-color:{{item.ad16obj.countdownBgColor}};color:{{item.ad16obj.countdownFontColor}}">
@@ -196,7 +196,7 @@
     <!--第一个布局-->
     <!--第二个布局-->
     <view wx:if="{{item.ad16obj.layout==2}}" class="activity-box2">
-      <navigator url='../../pages/productdetail/productdetail?pid={{items.did}}' class="activity-item" wx:for="{{item.ad16obj.data}}" wx:for-item="items">
+      <navigator url='../../pages/productdetail/productdetail?pid={{items.did}}' class="activity-item" wx:key="index" wx:for="{{item.ad16obj.data}}" wx:for-item="items">
         <view class="activity-img">
           <image src="{{items.path}}" />
           <view class="activity-countdown" wx:if="{{item.ad16obj.isCountdown}}" style="background-color:{{item.ad16obj.countdownBgColor}};color:{{item.ad16obj.countdownFontColor}}">
@@ -226,7 +226,7 @@
     <!--第二个布局-->
     <!--第三个布局-->
     <view wx:if="{{item.ad16obj.layout==3}}" class="activity-box3">
-      <navigator url='../../pages/productdetail/productdetail?pid={{items.did}}' class="activity-item" wx:for="{{item.ad16obj.data}}" wx:for-item="items">
+      <navigator url='../../pages/productdetail/productdetail?pid={{items.did}}' class="activity-item" wx:key="index" wx:for="{{item.ad16obj.data}}" wx:for-item="items">
         <view class="activity-img">
           <image src="{{items.path}}" />
           <view class="activity-countdown" wx:if="{{item.ad16obj.isCountdown}}" style="background-color:{{item.ad16obj.countdownBgColor}};color:{{item.ad16obj.countdownFontColor}}">
@@ -261,12 +261,12 @@
   <view wx:if="{{item.adType==17}}" style="background-Color:{{item.bgColor}};margin-top:{{item.ad17obj.margin_top*2}}rpx;margin-bottom:{{item.ad17obj.margin_bottom*2}}rpx;clear:both">
     <scroll-view scroll-x>
       <view class="coupon_box">
-        <view class="coupon_item" wx:if="{{item.ad17obj.layout==1}}" wx:for="{{item.ad17obj.data}}" wx:for-item="items" data-id="{{items.did}}" data-name="{{items.name}}" data-type="{{items.selectType}}" data-keyWord="{{items.keyWord}}" data-AppId="{{items.AppId}}"
+        <view class="coupon_item" wx:if="{{item.ad17obj.layout==1}}" wx:for="{{item.ad17obj.data}}" wx:key="index" wx:for-item="items" data-id="{{items.did}}" data-name="{{items.name}}" data-type="{{items.selectType}}" data-keyWord="{{items.keyWord}}" data-AppId="{{items.AppId}}"
           data-AppUrl="{{items.AppUrl}}" data-MinAppUrl="{{item.MinAppUrl}}" bindtap="tplGoToPage">
           <view class="coupon_price">￥{{items.SalePrice}}</view>
           <view class="coupon_desc">{{items.SellingPoints}}</view>
         </view>
-        <view wx:if="{{item.ad17obj.layout==2}}" wx:for="{{item.ad17obj.data}}" wx:for-item="items" class="coupon_img" data-id="{{items.did}}" data-name="{{items.name}}" data-type="{{items.selectType}}" data-keyWord="{{items.keyWord}}" data-AppId="{{items.AppId}}"
+        <view wx:if="{{item.ad17obj.layout==2}}" wx:for="{{item.ad17obj.data}}" wx:key="index" wx:for-item="items" class="coupon_img" data-id="{{items.did}}" data-name="{{items.name}}" data-type="{{items.selectType}}" data-keyWord="{{items.keyWord}}" data-AppId="{{items.AppId}}"
           data-AppUrl="{{items.AppUrl}}" data-MinAppUrl="{{item.MinAppUrl}}" bindtap="tplGoToPage">
           <image src="{{items.path}}"></image>
         </view>
