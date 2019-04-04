@@ -71,6 +71,9 @@
       <text>3、多年银行合作渠道，匹配优选贷款方案</text>
       <text>4、无前置费用，诚意金,银行放款成功后再收费,品牌推广渠道强，值得信赖</text>
       <text>5、贷款赎楼一条龙操作，自有资金更安全</text>
+      <image mode="widthFix" src="../../img/001.jpg" />
+      <image mode="widthFix" src="../../img/002.jpg" />
+      <image mode="widthFix" src="../../img/001.jpg" />
     </view>
     <view class="comment" wx:if="{{!cur}}">
      <view class="comment_title">

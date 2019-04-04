@@ -113,7 +113,7 @@ text-align: center;font-size: 28rpx;}
   color: #d5d5d5;
   line-height: 40rpx;
 }
-.grade_start{
+.grade_start .iconxing{
   color: #f7ce46;
 }
 .vendor_bottom_info .tip{

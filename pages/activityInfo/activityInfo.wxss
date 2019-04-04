@@ -1,0 +1,92 @@
+@import '../../style/icon-font.wxss';
+.activity{width: 750rpx;background-color: #f5f5f5;padding-bottom:92rpx;}
+.activity .box{background-color: #fff;width: 100%;margin: 0 auto;padding: 0 30rpx;}
+.activity .header{height: 222rpx;}
+.border{border-bottom: 2rpx solid #ededed;width: 100%;}
+.vendor_dec .title {
+  font-size: 30rpx;font-weight: bold;
+  color: #333;
+}
+.vendor_info{display: flex;align-items: center;justify-content: space-between;border-bottom: 2rpx solid #ededed;height: 100%;}
+.vendor_info .img{width: 100rpx;height: 100rpx;border-radius: 50%;margin-right: 15rpx;}
+.vendor_info label {
+  display: inline-block;
+  font-size: 24rpx;
+  margin: 10rpx 10rpx 0 0;
+  padding: 3rpx 10rpx;
+  border-radius: 4rpx;
+  line-height: 40rpx;
+}
+.vendor_dec .adress{display: flex;justify-content: flex-start;align-items: center;margin-top: 20rpx;}
+.vendor_dec .adress .iconfont{color: #da4f50;}
+.vendor_dec .adress text{color: #666;}
+.vendor_info .Istop {
+  background: #f7781f;
+  color: #fff;
+}
+.vendor_info .Isactivity {
+  background: #1adba3;
+  color: #fff;
+}
+.call_phone{width: 150rpx;height: 50rpx;background-color: #da4f50;border-radius: 10rpx;}
+.call_phone text{color: #fff;font-size: 26rpx;display: block;text-align: center;width: 100%;}
+.activity .info{
+  display: flex;flex-direction: column;justify-content: center;align-items: flex-start;margin-bottom: 20rpx;
+}
+.activity .info .cd{width: 100%;line-height: 46rpx;font-size: 24rpx;color: #666;}
+.activity .info image{width: 100%;margin-bottom:10rpx;}
+.activity .info .info_desc{
+  height: 80rpx;border-bottom: 2rpx solid #ededed;display: flex;align-items: flex-end;width: 690rpx;padding-bottom:5rpx;
+}
+.activity .info .info_desc .op_item label{color: #afdaf5;line-height: 35rpx;}
+.activity .info .info_desc .operation_url,.activity .info .info_desc .op_item{display: flex;align-items: center;height: 35rpx;}
+.activity .info .info_desc .operation_url label{line-height: 35rpx;}
+.activity .info .info_desc .op_item .iconfont{margin-right:15rpx;}
+.activity .info .info_desc .op_item{margin-right:30rpx;}
+.activity .info .info_list{display: flex;flex-wrap:wrap;padding-top: 24rpx;}
+.activity .info .info_list .tol{width: 50rpx;display: flex;flex-direction: column;justify-content: center;align-items: center;margin-right: 18rpx;margin-bottom:16rpx;}
+.activity .info .info_list .tol text{font-size: 22rpx;color: #666;}
+.activity .info .info_list .item{width: 50rpx;height: 50rpx;margin-right: 18rpx;margin-bottom:16rpx;}
+.activity .info .info_list .item image{width: 100%;height: 100%;border-radius: 50%;}
+.activity .timer{margin-bottom: 20rpx;background-color: #fff;display: flex;flex-direction: column;align-items: center;}
+.activity .timer .timer_release{width: 690rpx;border-bottom: 2rpx solid #ededed;line-height: 62rpx;font-size: 24rpx;color: #666;text-align: left;}
+.activity .timer .timer_phone{width: 690rpx;border-bottom: 2rpx solid #ededed;display: flex;justify-content: space-between;align-items: center;}
+.activity .timer .timer_phone .phone_num{line-height: 78rpx;font-size: 24rpx;color: #666;}
+.activity .timer .timer_phone .phone_icon{display: flex;width: 205rpx;height: 60rpx;background-color: #da5052;justify-content: flex-start;align-items: center;padding: 0 20rpx;border-radius: 15rpx;}
+.activity .timer .timer_phone .phone_icon .iconfont{color: #fff;margin-right: 15rpx;}
+.activity .timer .timer_phone .phone_icon .icon_txt{line-height: 60rpx;color: #fff;}
+.activity .timer .timer_cencet{width: 690rpx;line-height: 78rpx;color: #f09a42;}
+.activity .comment{width: 100%;background-color: #fff;display: flex;flex-direction: column;justify-content: center;align-items: center;}
+.activity .comment .comment_header{width: 100%;height: 77rpx;display: flex;justify-content: space-between;align-items: center;}
+.activity .comment .comment_header .header_name{border-left: 5rpx solid #da4f50;padding-left: 20rpx;color: #666;font-size: 28rpx;height: 35rpx;line-height: 35rpx}
+.activity .comment .comment_header .header_icon{display: flex;}
+.activity .comment .comment_header .header_icon .iconfont{margin-right: 10rpx;}
+.activity .comment .comment_header .header_icon view{color: #f09a42;}
+.activity .comment .comment_list{width: 690rpx;}
+.activity .comment .comment_list .list_item{width: 690rpx;display: flex;justify-content: space-between;align-items: center;min-height: 222rpx;border-bottom: 2rpx solid #ededed;padding-top: 15rpx;}
+.activity .comment .comment_list .list_item .item_left{display: flex;justify-content: flex-start;align-items: center;}
+.activity .comment .comment_list .list_item .item_left image{width: 100rpx;height: 100rpx;border-radius: 50%;margin-right: 20rpx;}
+.activity .comment .comment_list .list_item .item_left .left_name{display: flex;flex-direction: column;align-items: flex-start;}
+.activity .comment .comment_list .list_item .item_left .left_name .name{font-size: 26rpx;color: #8db5f3;line-height: 40rpx;}
+.activity .comment .comment_list .list_item .item_left .left_name .time{line-height: 40rpx;}
+.activity .comment .comment_list .list_item .item_left .left_name .comt{color: #333;}
+.activity .comment .comment_list .list_item .item_right{font-size: 26rpx;color: #8db5f3;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fixedbtm{position: fixed;bottom: 0;height: 92rpx;width: 100%;background-color: #fff;display: flex;justify-content: flex-start}
+.fixedbtm .item{display: flex;flex-direction: column;align-items: center;width: 150rpx;}
+.fixedbtm .item .iconfont{font-size: 45rpx;color: #666;}
+.fixedbtm .photo{width: 300rpx;background-color: #da4f50;display: flex;flex-direction: column;align-items: center;justify-content: center;}
+.fixedbtm .photo text{color: #fff;font-size: 24rpx;}

@@ -38,7 +38,7 @@
 				{
 					"id": 0,
 					"name": "购物车",
-					"pathName": "pages/business/business",
+					"pathName": "pages/activityInfo/activityInfo",
 					"query": "uid=1",
 					"scene": null
 				},

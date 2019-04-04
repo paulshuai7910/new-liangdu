@@ -2,7 +2,8 @@ const $ = require('../../utils/util.js');
 // pages/category/category.js
 Page({
   data: {
-    tabs: [{
+    tabs: [
+      {
       title: '全部',
       icon: '',
       content: null
@@ -60,10 +61,11 @@ Page({
   onLoad: function (options) {
   
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  goToActivityInfo() {
+    wx.navigateTo({
+      url: '/pages/activityInfo/activityInfo'
+    })
+  },
   onReady: function () {
   
   },

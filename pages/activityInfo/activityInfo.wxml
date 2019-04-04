@@ -1,0 +1,108 @@
+<view class='activity'>
+  <view class="box header">
+    <view class='vendor_info'>
+      <flex-view cross='center'>
+        <image class="img" src='../../img/comp_logo.png'></image>
+        <flex-view dir='top' class='vendor_dec'>
+          <view class='title'>六盘水曲阜路农商支行</view>
+          <flex-view>
+            <label class='Istop'>置顶</label>
+            <label class='Isactivity'>商家活动</label>
+          </flex-view>
+          <view class="adress">
+            <view class="iconfont iconditu"></view>
+            <text>六盘水市钟山区钟山路39号</text>
+          </view>
+        </flex-view>
+      </flex-view>
+      <flex-view cross='center' class='call_phone'><text >我要发布</text></flex-view>
+    </view>
+  </view>
+  <view class="box info">
+    <text class="cd">1、资深老品牌，专业、安全更放心</text>
+    <text class="cd">2、诚信报价，全包费用更划算</text>
+    <text class="cd">3、多年银行合作渠道，匹配优选贷款方案</text>
+    <text class="cd">4、无前置费用，诚意金,银行放款成功后再收费,品牌推广渠道强，值得信赖</text>
+    <text class="cd">5、贷款赎楼一条龙操作，自有资金更安全</text>
+    <image mode="widthFix" src="../../img/001.jpg" />
+    <image mode="widthFix" src="../../img/002.jpg" />
+    <!-- <image mode="widthFix" src="../../img/001.jpg" /> -->
+    <view class='info_desc'>
+      <!-- <view class='iconfont icon-top-s'></view> -->
+      <view class='operation_detail'>
+        <flex-view cross='center' main='between'>
+          <flex-view cross='center'>
+            <view class='op_item'>
+              <flex-view cross='center'>
+                <i class='iconfont iconliulan'></i>
+                <label>12345</label><text>人浏览</text></flex-view>
+            </view>
+            <view class='op_item'>
+              <flex-view cross='center'>
+                <i class='iconfont iconiconfontzhizuobiaozhun44'></i>
+                <label>45</label><text>人赞</text></flex-view>
+            </view>
+          </flex-view>
+        </flex-view>
+      </view>
+    </view>
+    <view class="info_list">      
+      <view class="tol"><text>40</text><text>赞</text></view>
+      <view class="item" wx:for="{{imgAry}}" wx:key="index">
+        <image mode="widthFix" src="{{item.url}}" />
+      </view>
+    </view>
+  </view>
+  <view class="box timer">
+    <view class="timer_release">发布时间：2019-02-22 18：09</view>
+    <view class="timer_phone">
+      <view class="phone_num">联系电话：15685802369</view>
+      <view class="phone_icon">
+        <view class="iconfont icon-mobile"></view>
+        <view class="icon_txt">拨打电话</view>
+      </view>
+    </view>
+    <view class="timer_cencet">联系我时，就说在银企联盟上看到的信息喔</view>
+  </view>
+  <view class="box comment">
+    <view class="comment_header">
+      <view class="header_name">评论</view>
+      <view class="header_icon">
+        <view class="iconfont iconpinglun"></view>
+        <view class="">我要评论</view>
+      </view>
+    </view>
+    <view class="comment_list">
+      <view class="list_item">
+        <view class="item_left">
+          <image mode="widthFix" src="../../img/comp_logo.png" />
+          <view class="left_name">
+            <view class="name">张小白</view>
+            <view class="time">2019-02-22</view>
+            <view class="comt">体验非常好</view>
+          </view>
+        </view>
+        <view class="item_right">回复</view>
+      </view>
+      <view class="list_item">
+        <view class="item_left">
+          <image mode="widthFix" src="../../img/comp_logo.png" />
+          <view class="left_name">
+            <view class="name">张白</view>
+            <view class="time">2019-02-22</view>
+            <view class="comt">体验非常好</view>
+          </view>
+        </view>
+        <view class="item_right">回复</view>
+      </view>
+    </view>
+  </view>
+  <view class="fixedbtm">
+    <view class="item"><view class="iconfont icon-home"></view><text >首页</text></view>
+    <view class="item"><view class="iconfont iconshoucang"></view><text >收藏</text></view>
+    <view class="item"><view class="iconfont iconpaper-airplane"></view><text >导航</text></view>
+    <view class="item photo"><text>我要评论</text></view>
+  </view>
+</view>
+
+<view class=""></view>

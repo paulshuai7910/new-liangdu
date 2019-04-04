@@ -1,5 +1,5 @@
 @import '../../style/icon-font.wxss';
-.contain{display: flex;flex-direction: column;align-items: flex-start;width: 750rpx;background-color: #f5f5f5;}
+.contain{display: flex;flex-direction: column;align-items: flex-start;width: 750rpx;background-color: #f5f5f5;padding-bottom:92rpx;}
 .swiper,.banner{
   height: 350rpx;width: 100%;position: relative;
   background-color: red;
@@ -48,6 +48,7 @@ display: flex;justify-content: flex-start;align-items: center;padding:0 35rpx;}
 .info .info_tabs view.cur{color: #fc394e;border-bottom: 4rpx solid #e82a43;}
 .info .detail{display: flex;flex-direction: column;padding-top: 15rpx;}
 .info .detail text{width: 100%;padding: 0 20rpx;line-height: 46rpx;font-size: 24rpx;color: #666;}
+.info .detail image{width: 750rpx;margin-bottom:10rpx;}
 .info .comment{padding-bottom:148rpx;}
 .info .comment .comment_title{display: flex;justify-content: flex-start;width: 710rpx;margin: 0 auto;border-bottom:2rpx solid #ededed;height: 145rpx;align-items: center;}
 .info .comment .comment_title .title_logo{margin-right: 15rpx;width: 100rpx;height: 100rpx;}
@@ -66,8 +67,8 @@ display: flex;justify-content: flex-start;align-items: center;padding:0 35rpx;}
 
 .fixedbtm{position: fixed;bottom: 0;height: 92rpx;width: 100%;background-color: #fff;display: flex;justify-content: flex-start}
 .fixedbtm .item{display: flex;flex-direction: column;align-items: center;width: 150rpx;}
-.fixedbtm .item .iconfont{font-size: 45rpx;color: #666;margin-bottom:10rpx;}
-.fixedbtm .photo{width: 300rpx;background-color: #da4f50;display: flex;flex-direction: column;align-items: center;}
+.fixedbtm .item .iconfont{font-size: 45rpx;color: #666;}
+.fixedbtm .photo{width: 300rpx;background-color: #da4f50;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 .fixedbtm .photo text{color: #fff;font-size: 24rpx;}
 
 .img{width: 100%;}

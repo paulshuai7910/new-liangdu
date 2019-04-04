@@ -27,7 +27,7 @@
   <view wx:for="{{tabs}}" wx:key="index" slot="tab__conter-{{index}}" style='position: relative;'>
 
     <view class='vendor_list'>
-        <view class='vendor_item'>
+        <view class='vendor_item' bindtap="goToActivityInfo">
           <flex-view class='vendor_info' cross='center' main='between'>
             <flex-view cross='center'>
               <image src='http://bpic.588ku.com/original_pic/18/11/25/6c43f9645e35eef5512192068a087258.jpg!/fw/248/unsharp/true/compress/true'></image>
@@ -39,8 +39,7 @@
                 </flex-view>
               </flex-view>
             </flex-view>
-            <flex-view cross='center' class='call_phone'>
-              <i class='iconfont icondianhua'></i>拨打电话</flex-view>
+            <flex-view cross='center' class='call_phone'><i class='iconfont icondianhua'></i><text >拨打电话</text></flex-view>
           </flex-view>
           <view class='vendor_text'>
             <elip-view line='4'>
@@ -76,13 +75,10 @@
                     <i class='iconfont icongengduo'></i>
                   </view>
                 </flex-view>
-
               </view>
             </view>
-
           </view>
         </view>
       </view>
-
   </view>
 </tab-view>

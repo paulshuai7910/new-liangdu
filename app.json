@@ -8,12 +8,13 @@
     "shopadmin/index/index",
     "pages/vendorlist/vendorlist",
     "pages/vendorenter/vendorenter",
-    "pages/business/business"
+    "pages/business/business",
+    "pages/activityInfo/activityInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#3c78d8",
-    "navigationBarTitleText": "在凉都",
+    "navigationBarTitleText": "开发DEMO-demo",
     "navigationBarTextStyle": "white",
     "navigationStyle": "default"
   },

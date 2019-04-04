@@ -28,11 +28,6 @@ Page({
       key: 'share',
       title: '分享'
     }
-    // , {
-    //   key: 'home',
-    //   title: '首页',
-    //   url:'/pages/home/home'
-    // }
   ],
     tabs: [{
         title: '最新信息',

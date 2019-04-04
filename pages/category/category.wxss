@@ -42,7 +42,6 @@
   height: 120rpx;
   margin-right: 20rpx;
 }
-
 .vendor_info .title {
   font-size: 30rpx;
   color: #008aff;
@@ -72,8 +71,6 @@
 }
 
 .call_phone {
-  font-size: 26rpx;
-  color: #fff;
   background-color: #ec404c;
   padding: 10rpx 20rpx;
   border-radius: 8rpx;
@@ -82,8 +79,10 @@
 .call_phone .iconfont {
   font-size: 36rpx;
   margin-right: 6rpx;
+  color: #fff;
 }
-
+.call_phone text{font-size: 26rpx;
+  color: #fff;}
 .vendor_text {
   font-size: 26rpx;
   line-height: 40rpx;
@@ -107,7 +106,7 @@
   color: red;
   margin-right: 5rpx;
 }
-
+.location .iconweizhi{color: red;}
 .operation_box {
   color: #888;
 }
