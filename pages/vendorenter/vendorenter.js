@@ -8,9 +8,31 @@ Page({
     startTime: '', // 开始营业时间
     endTime: '', //结束营业时间
     address:'',//店铺地址
+    items: [
+      {name: '刷卡支付', value: '刷卡支付'},
+      {name: '免费wifi', value: '免费wifi'},
+      {name: '免费停车', value: '免费停车'},
+      {name: '禁止吸烟', value: '禁止吸烟'},
+      {name: '提供包间', value: '提供包间'},
+      {name: '沙发休闲', value: '沙发休闲'},
+    ],
+    itemsVal: '选择店内设置'
   },
   onLoad: function(options) {
     this.GetPlatformCategory();
+  },
+  checkboxChange(e) {
+    let _val
+    if (e.detail.value.length>0) {
+      _val = e.detail.value.join(',')
+    }else{
+      _val = '选择店内设置'
+    }
+    console.log(_val)
+    this.setData({
+      itemsVal:_val
+    })
+    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   },
   GetPlatformCategory: function() {
     let that = this;
@@ -22,6 +44,10 @@ Page({
     //     });
     //   }
     // })
+    let res = [ {name:'金融传媒'},{name:'生活购物'},{name:'美食餐饮'},{name:'酒店娱乐'}]
+    that.setData({
+      CategoryList: res
+    });
   },
   bindPickerChange: function(e) { //选择行业分类
     this.setData({
@@ -40,13 +66,13 @@ Page({
   },
   getLocation: function(e) { //获取位置
     let that = this;
-    // wx.chooseLocation({
-    //   success: function (res) {
-    //     console.log(res);
-    //     that.setData({
-    //       address: res.address + res.name
-    //     });
-    //   }
-    // })
+    wx.chooseLocation({
+      success: function (res) {
+        console.log(res);
+        that.setData({
+          address: res.address + res.name
+        });
+      }
+    })
   }
 })

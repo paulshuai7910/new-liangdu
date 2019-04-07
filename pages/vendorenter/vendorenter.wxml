@@ -1,4 +1,4 @@
-<view class='from_box'>
+<view class='from_box one'>
   <view class='from_content'>
     <input-view type="text" title="商家名称" placeholder="请输入商家名称" value="" bind:input="onInput" name="AccountName"></input-view>
     <flex-view class='from_content'>
@@ -15,13 +15,12 @@
 <view class='from_box'>
   <view class='from_content'>
     <input-view type="text" title="关键字" placeholder="请输入行业关键字" value="" bind:input="onInput" name="AccountName"></input-view>
-
     <view class='from_content'>
       <flex-view cross='center' class="input__combine--nob">
         <view class='input__label'>详细地址</view>
         <flex-view main='between' style='flex:1'>
           <input placeholder='请确认店铺详细地址' value='{{address}}' style='flex:1'></input>
-          <view class="iconfont icon-location" style='color:#db384c' bindtap='getLocation'></view>
+          <view class="iconfont iconweizhi" style='color:#db384c' bindtap='getLocation'></view>
         </flex-view>
       </flex-view>
     </view>
@@ -32,98 +31,104 @@
   <view class='from_content'>
     <view class="input__combine--nob">
       <view class='input__label'>店内设施</view>
+      <view class="chose_val">{{itemsVal}}</view>
     </view>
-    <view class='from_content'>
-      <view class="input__combine">
-        <flex-view  style='flex:1'>
-          <input placeholder='请输入要添加的设施' style='flex:1'></input><i style='color:#1aad19' class='iconfont icon-roundaddfill'></i>
-        </flex-view>
-      </view>
-      <view class="input__combine">
-        <flex-view  style='flex:1'>
-          <input placeholder='请输入要添加的设施' style='flex:1'></input><i style='color:#db384c' class='iconfont icon-roundclosefill'></i>
-        </flex-view>
-      </view>
-    </view>
+    <checkbox-group bindchange="checkboxChange" class="checkbox">
+      <label wx:for="{{items}}" wx:key="index">
+        <checkbox value="{{item.name}}" />
+        {{item.value}}
+      </label>
+    </checkbox-group>
   </view>
 </view>
 
 <view class='from_box'>
-  <view class='from_content'>
+  <view class='content'>
     <flex-view cross='center' class="input__combine">
       <view class='input__label'>营业开始时间</view>
       <picker mode="time" value="{{startTime}}" bindchange="bindStartDateChange">
-        {{startTime?startTime:'请选择营业开始时间'}}
+        {{startTime?startTime:'00:00'}}
       </picker>
     </flex-view>
   </view>
-  <view class='from_content'>
+  <view class='content'>
     <view class="input__combine">
       <view class='input__label'>营业结束时间</view>
       <picker mode="time" value="{{endTime}}" bindchange="bindEndDateChange">
-        {{endTime?endTime:'请选择营业结束时间'}}
+        {{endTime?endTime:'00:00'}}
       </picker>
     </view>
+  </view>
+  <view class="concet">
+    <label >联系电话</label><input type="text" placeholder="请输入你的手机号" />
+  </view>
+  <view class="concet">
+    <label >商家公告</label><input type="text" placeholder="请输入商家公告" />
   </view>
 </view>
 
 <view class='from_box'>
   <view class='from_content'>
-    <view class="input__combine--nob">
-      <view class='input__label'>二维码</view>
+    <view class="input__combine_cam">
+      <view class='input_cam'>选择图片</view>
+      <view class='input_cam'>选择图片</view>
     </view>
-    <flex-view cross='center' main='around'>
-      <flex-view dir='top' cross='center' main='center' class='qrcode_box'>
-        <i class="iconfont icon-camera"></i>
-        <label>商家LOGO</label>
-        <label>（200*200）</label>
-      </flex-view>
-      <flex-view dir='top' cross='center' main='center' class='qrcode_box'>
-        <i class="iconfont icon-camera"></i>
-        <label>服务微信</label>
-        <label>（200*200）</label>
-      </flex-view>
-    </flex-view>
+    <view class="input__combine_cam">
+      <view class='input_icon'><i class="iconfont iconxiangjipaizhao"></i></view>
+      <view class='input_icon'><i class="iconfont iconxiangjipaizhao"></i></view>
+    </view>
+    <view class="input__combine_cam" style="padding-top:0;">
+      <view class='input_lab'>商家LOGO（200*200）</view>
+      <view class='input_lab'>老板微信（200*200）</view>
+    </view>
   </view>
 </view>
-
+<view class='from_box'>
+  <view class='from_swiper'>
+    <text class="swiper_title">商家首页轮播图（640*370）</text>
+    <view class='swiper_icon'>
+      <view class="iconfont iconjia"></view>
+    </view>
+  </view>
+</view>
 <view class='from_box'>
   <view class='from_content'>
     <view class="input__combine--nob">
       <view class='input__label'>商家介绍</view>
     </view>
     <view class='textarea_box'>
-      <textarea placeholder="商家介绍" />
+      <textarea placeholder="请输入商家介绍" />
     </view>
   </view>
-
-  <view class='from_content'>
-    <view class="input__combine--nob">
-      <view class='input__label'>商家详情图</view>
+  <view class='from_detail'>
+    <view class="input__combine_detail">
+      <view class='input_label'>商家详情图（630*670）</view>
+      <view class='input_num'>已选择0张</view>
     </view>
-    <view class='img_list'>
-      <flex-view main='between' wrap='wrap'>
-        <flex-view dir='top' cross='center' main='center' class='qrcode_box'>
-          <i class="iconfont icon-camera"></i>
-          <label>点击上传</label>
-          <label>（640*370）</label>
-        </flex-view>
-        <flex-view dir='top' cross='center' main='center' class='qrcode_box'>
-          <i class="iconfont icon-camera"></i>
-          <label>点击上传</label>
-          <label>（640*370）</label>
-        </flex-view>
-        <flex-view dir='top' cross='center' main='center' class='qrcode_box'>
-          <i class="iconfont icon-camera"></i>
-          <label>点击上传</label>
-          <label>（640*370）</label>
-        </flex-view>
-        <flex-view dir='top' cross='center' main='center' class='qrcode_box'>
-          <i class="iconfont icon-camera"></i>
-          <label>点击上传</label>
-          <label>（640*370）</label>
-        </flex-view>
-      </flex-view>
-    </view>
+    <!-- <view class='img_list'> -->
+      <view class='swiper_icon'>
+        <view class="iconfont iconjia"></view>
+      </view>
+    <!-- </view> -->
   </view>
 </view>
+<view class='from_phone from_box'>
+  <view class="input__combine_phone">
+    <view class='input_cam'>手机号验证:</view>
+    <input type="text" />
+  </view>
+  <view class='input_vnum'>获取验证码</view>
+</view>
+<view class='from_enter from_box'>
+  <text class="swiper_title">入驻时间</text>
+  <view class="input_radio">
+    <radio value="" checked="{{false}}" />
+    <view class='input_moy'>一年（收费3600.00元）</view>
+  </view>
+</view>
+<view class="agreebox">
+  <radio value="" checked="{{false}}" />
+  <view class='input_reade'>我已阅读并同意</view>
+  <view class='input_agree'>《商家入驻须知》</view>
+</view>
+<view class="apply">申请开通</view>
