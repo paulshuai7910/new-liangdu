@@ -56,6 +56,17 @@
   line-height: 46rpx;
   color: #333;
 }
+.input__combine--nob {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  line-height: 1.4;
+  padding: 24rpx 30rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #333;
+}
 .input__combine--nob .chose_val{
   width: 480rpx;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
 }
@@ -66,18 +77,6 @@
   color:#333;
   display: flex;
   align-items: center;
-}
-
-.input__combine--nob {
-  position: relative;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  line-height: 1.4;
-  padding: 24rpx 30rpx;
-  box-sizing: border-box;
-  font-size: 28rpx;
-  color: #333;padding-bottom:0;
 }
 .input__combine_cam{display: flex;flex-flow: row nowrap;align-items: center;line-height: 1.4;justify-content: space-around;padding-top: 30rpx;}
 .input__combine_cam .input_cam{

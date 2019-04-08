@@ -122,12 +122,12 @@
 <view class='from_enter from_box'>
   <text class="swiper_title">入驻时间</text>
   <view class="input_radio">
-    <radio value="" checked="{{false}}" />
+    <radio value="" checked="{{isCheckedTime}}" bindtap="checkedTime" />
     <view class='input_moy'>一年（收费3600.00元）</view>
   </view>
 </view>
 <view class="agreebox">
-  <radio value="" checked="{{false}}" />
+  <radio value="" checked="{{isCheckedAgree}}" bindtap="checkedAgree" />
   <view class='input_reade'>我已阅读并同意</view>
   <view class='input_agree'>《商家入驻须知》</view>
 </view>

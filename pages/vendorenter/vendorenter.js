@@ -16,10 +16,22 @@ Page({
       {name: '提供包间', value: '提供包间'},
       {name: '沙发休闲', value: '沙发休闲'},
     ],
-    itemsVal: '选择店内设置'
+    itemsVal: '选择店内设置',
+    isCheckedTime:false,
+    isCheckedAgree:false
   },
   onLoad: function(options) {
     this.GetPlatformCategory();
+  },
+  checkedTime() {
+    this.setData({
+      isCheckedTime:!this.data.isCheckedTime
+    })
+  },
+  checkedAgree() {
+    this.setData({
+      isCheckedAgree:!this.data.isCheckedAgree
+    })
   },
   checkboxChange(e) {
     let _val
