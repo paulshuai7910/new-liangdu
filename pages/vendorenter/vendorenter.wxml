@@ -1,6 +1,7 @@
+<form bindsubmit="formSubmit">
 <view class='from_box one'>
   <view class='from_content'>
-    <input-view type="text" title="商家名称" placeholder="请输入商家名称" value="" bind:input="onInput" name="AccountName"></input-view>
+    <view ><label>商家名称</label><input type="text" placeholder="请输入商家名称" name="AccountName"></input></view>
     <flex-view class='from_content'>
       <view class="input__combine--nob">
         <view class='input__label'>行业分类</view>
@@ -14,7 +15,7 @@
 
 <view class='from_box'>
   <view class='from_content'>
-    <input-view type="text" title="关键字" placeholder="请输入行业关键字" value="" bind:input="onInput" name="AccountName"></input-view>
+    <view><label>关键字</label><input type="text" placeholder="请输入行业关键字" value="" name="AccountName"></input></view>
     <view class='from_content'>
       <flex-view cross='center' class="input__combine--nob">
         <view class='input__label'>详细地址</view>
@@ -60,10 +61,10 @@
     </view>
   </view>
   <view class="concet">
-    <label >联系电话</label><input type="text" placeholder="请输入你的手机号" />
+    <label >联系电话</label><input type="text" name="concetNumber" placeholder="请输入你的手机号" />
   </view>
   <view class="concet">
-    <label >商家公告</label><input type="text" placeholder="请输入商家公告" />
+    <label >商家公告</label><input type="text" name="shopNotice" placeholder="请输入商家公告" />
   </view>
 </view>
 
@@ -97,7 +98,7 @@
       <view class='input__label'>商家介绍</view>
     </view>
     <view class='textarea_box'>
-      <textarea placeholder="请输入商家介绍" />
+      <textarea name="textare" placeholder="请输入商家介绍" />
     </view>
   </view>
   <view class='from_detail'>
@@ -115,20 +116,21 @@
 <view class='from_phone from_box'>
   <view class="input__combine_phone">
     <view class='input_cam'>手机号验证:</view>
-    <input type="text" />
+    <input type="text" name="phoneVerify" />
   </view>
   <view class='input_vnum'>获取验证码</view>
 </view>
 <view class='from_enter from_box'>
   <text class="swiper_title">入驻时间</text>
   <view class="input_radio">
-    <radio value="" checked="{{isCheckedTime}}" bindtap="checkedTime" />
+    <radio value="" name="enterTime" checked="{{isCheckedTime}}" bindtap="checkedTime" />
     <view class='input_moy'>一年（收费3600.00元）</view>
   </view>
 </view>
 <view class="agreebox">
-  <radio value="" checked="{{isCheckedAgree}}" bindtap="checkedAgree" />
+  <radio value="" name="agreeReade" checked="{{isCheckedAgree}}" bindtap="checkedAgree" />
   <view class='input_reade'>我已阅读并同意</view>
   <view class='input_agree'>《商家入驻须知》</view>
 </view>
-<view class="apply">申请开通</view>
+<button class="apply" form-type="submit">申请开通</button>
+</form>
