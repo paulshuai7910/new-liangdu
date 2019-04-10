@@ -1,3 +1,4 @@
+import requst from '../../utils/requestHelp'
 const app = getApp().globalData;
 const $ = require('../../utils/util.js');
 const i = require('../../controller/vendor.js');
@@ -22,9 +23,41 @@ Page({
   },
   formSubmit(e) {
     console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    let _params={
+      data:{
+        name:'',  //商家名称
+        industryCategoryId:'',  //行业分类id
+        industryKeywordSet:'',  //关键字
+        detailAddress:'', //详细地址
+        addressLng:'',  //
+        addressLat: '',
+        facility:'',
+        businessStartTime:'', //开始时间
+        businessEndTime:'', //  结束时间
+        contactPhone:'',  //  联系电话
+        notice:'',        //商家公告
+        logoUrl:'',       //logo
+        bossWeixinQRCodeUrl:'', //  boss微信
+        description:'',
+        cellPhone:'',         //获取微信电话
+        userId:''
+      }
+    }
+    // requst()
   },
   onLoad: function(options) {
     this.GetPlatformCategory();
+    let _params={
+      data:{
+        sortBy:1,
+        pageSize:5,
+        pageNum:1
+      },
+      url:'https://ws.guizhoubank.lingruitech.cn/VendorWebService.asmx/List'
+    }
+    requst(_params).then(res=>{
+      console.log(res)
+    })
   },
   checkedTime() {
     this.setData({
@@ -49,8 +82,7 @@ Page({
     })
     console.log('checkbox发生change事件，携带value值为：', e.detail.value)
   },
-  GetPlatformCategory: function() {
-    let that = this;
+  GetPlatformCategory() {
     // i.GetPlatformCategory({
     //   success: function(res) {
     //     console.log(res);
@@ -59,8 +91,8 @@ Page({
     //     });
     //   }
     // })
-    let res = [ {name:'金融传媒'},{name:'生活购物'},{name:'美食餐饮'},{name:'酒店娱乐'}]
-    that.setData({
+    let res = [{name:'金融传媒'},{name:'生活购物'},{name:'美食餐饮'},{name:'酒店娱乐'}]
+    this.setData({
       CategoryList: res
     });
   },
